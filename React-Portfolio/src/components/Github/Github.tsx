@@ -18,8 +18,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import GitHubCalendar from "react-github-calendar";
 import styled from 'styled-components';
 import { Link } from "phosphor-react";
-import { useTranslation } from 'react-i18next';
-import { useRouter } from 'next/router';
+
 
 // _mock & config
 import { GITHUB_USERNAME } from "../config";
@@ -59,14 +58,7 @@ export default function Github() {
   const [totalStars, setTotalStars] = useState(0);
   const matches = useMediaQuery("(min-width: 630px)");
 
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   const html_url = user?.html_url;
 
@@ -189,15 +181,15 @@ export default function Github() {
               </Title>
 
               <Text>
-                {currentLang === 'ta' ? 'மொத்த பின்தொடர்பவர்கள் :' : 'Total Followers :'} {user?.followers}
+                Total Followers : {user?.followers}
               </Text>
-
+              
               <Text>
-                {currentLang === 'ta' ? 'மொத்தம் பின்தொடர்கிறது :' : 'Total Following :'} {user?.following}
+                Total Following : {user?.following}
               </Text>
-
+              
               <Text>
-                {currentLang === 'ta' ? 'மொத்த நட்சத்திரங்கள் :' : 'Total Stars :'} {totalStars}
+                Total Stars : {totalStars}
               </Text>
               <Text>
                 <a href={html_url} style={{
@@ -206,7 +198,7 @@ export default function Github() {
                   fontSize: '1rem',
                   textAlign: 'center',
                   margin: '1rem',
-                }}>{currentLang === 'ta' ? 'கிட்ஹப் சுயவிவரத்தைப் பார்வையிடவும்' : 'Visit GitHub Profile'}</a>
+                }}>Visit GitHub Profile</a>
               </Text>
             </div>
           </BoxWrapper>
@@ -221,7 +213,7 @@ export default function Github() {
           }}
         >
           <Title>
-            {currentLang === 'ta' ? 'கிட்ஹப் பங்களிப்பு' : github.contribution}
+            {github.contribution}
           </Title>
           <BoxWrapper withBackground={true}>
             <GitHubCalendar

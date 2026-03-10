@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FaSun, FaMoon, FaPlay, FaPause } from 'react-icons/fa';
 import { Translate } from 'phosphor-react'
 import { MdFormatSize } from "react-icons/md";
-import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
 
 interface SettingsProps {
   toggleTheme: () => void;
@@ -364,17 +362,13 @@ const Small = styled.small`
 `;
 
 const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
-  const { t } = useTranslation();
-  const router = useRouter();
   const [audioVisible, setAudioVisible] = useState(false);
   const [fontSize, setFontSize] = useState(16);
   const [showLanguageOptions, setShowLanguageOptions] = useState(false);
   const [showFontSizeOptions, setShowFontSizeOptions] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const changeLanguage = (lang: string) => {
-    router.push(router.pathname, router.asPath, { locale: lang });
-  };
+
 
   const increaseFontSize = () => {
     setFontSize(prevSize => prevSize + 2);
@@ -426,13 +420,7 @@ const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
         >
           {currentTheme === 'light' ? <FaMoon /> : <FaSun />}
         </IconButton>
-        <IconButton 
-          onClick={() => setShowLanguageOptions(!showLanguageOptions)}
-          className={showLanguageOptions ? 'active' : ''}
-          title="Change Language"
-        >
-          <Translate />
-        </IconButton>
+
         <IconButton 
           onClick={() => setShowFontSizeOptions(!showFontSizeOptions)}
           className={showFontSizeOptions ? 'active' : ''}
@@ -442,13 +430,7 @@ const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
         </IconButton>
       </OvalBar>
       
-      {/* Language Dropdown */}
-      {showLanguageOptions && (
-        <Dropdown style={{ opacity: 1, pointerEvents: 'all' }}>
-          <IconButton2 onClick={() => changeLanguage('en')}>English</IconButton2>
-          <IconButton2 onClick={() => changeLanguage('ta')}>தமிழ்</IconButton2>
-        </Dropdown>
-      )}
+
       
       {/* Font Size Dropdown */}
       {showFontSizeOptions && (

@@ -11,30 +11,19 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Container, Title } from '../../styles/styles';
 import { ExperienceContainer, ExperienceContent } from './styles';
 import { Books } from 'phosphor-react';
-import { useTranslation } from 'react-i18next';
-import { useRouter } from 'next/router';
+
 import experience from '../../data/experiences';
 
 export function Experience() {
   const theme = useTheme();
-  const { t, i18n } = useTranslation('common'); // Use the 'common' namespace
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
-
-  useEffect(() => {
-  }, [currentLang]);
 
   return (
     <Container>
       <Title>
-        {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}  
+        Experience  
         <span>
-          <Books /> {currentLang === 'ta' ? 'பயிற்சி' : 'Internship'}
+          <Books /> Internship
         </span>
       </Title>
 
@@ -42,7 +31,7 @@ export function Experience() {
         <VerticalTimeline lineColor={theme.firstColor}>
           {experience &&
             experience.map(exp => {
-              const description = exp.description[currentLang];
+              const description = exp.description;
               return (
                 <VerticalTimelineElement
                   contentStyle={{
@@ -60,7 +49,7 @@ export function Experience() {
                       width={60}
                       height={60}
                       src={exp.img}
-                      alt={exp.title.en} 
+                      alt={exp.title} 
                       loading="lazy"
                     />
                   }
@@ -73,29 +62,29 @@ export function Experience() {
                 >
                   <ExperienceContainer>
                     <ExperienceContent>
-                      <h1>{exp.title[currentLang]}</h1>
-                      <h2>{exp.subTitle[currentLang]}</h2>
-                      <span>{exp.office[currentLang]}</span>
+                      <h1>{exp.title}</h1>
+                      <h2>{exp.subTitle}</h2>
+                      <span>{exp.office}</span>
                       <p>{description ? description.split('\n').map((line, i) => (
                         <span key={i}>
                           {line}
                           <br />
                         </span>
-                      )) : t('description_not_available')}</p>
+                      )) : 'Description not available'}</p>
                       <div style={{ display: 'flex', gap: "1rem", marginTop: "1rem", marginBottom: "1rem" }}>
                         <Button>
                           <Link legacyBehavior href={exp.certificate ?? ''}>
-                            <a target="_blank">{currentLang === 'ta' ? 'சான்றிதழ்' : 'Certificate'}</a>
+                            <a target="_blank">Certificate</a>
                           </Link>
                         </Button>
                         <Button>
                           <Link legacyBehavior href={exp.link2 ?? ''}>
-                            <a target="_blank">{currentLang === 'ta' ? 'தளம்' : 'Website'}</a>
+                            <a target="_blank">Website</a>
                           </Link>
                         </Button>
                       </div>
                       <div>
-                        <h3>{currentLang === 'ta' ? 'தொழில்நுட்பங்கள்:' : 'Techs:'}</h3>
+                        <h3>Techs:</h3>
                         <div className="tag">
                           {exp.tags.map(tag => (
                             <Image style={{ margin: '0.2rem' }}

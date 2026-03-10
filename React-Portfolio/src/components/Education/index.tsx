@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useTheme } from 'styled-components'
-import education from '../../data/education'
+import education from '../../data/educations'
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -52,7 +52,7 @@ export function Education() {
                       style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
                       width={60}
                       height={60}
-                      src={education.img}
+                      src={education.logo}
                       alt={education.title}
                       loading="lazy"
                     />
@@ -81,11 +81,7 @@ export function Education() {
                             <a target="_blank">Website</a>
                           </Link>
                         </Button>
-                        <Button>
-                          <Link legacyBehavior href={education.link2 ?? ''}>
-                            <a target="_blank">Syllabus</a>
-                          </Link>
-                        </Button>
+
                       </div>
                     </EducationContent>
                   </EducationContainer>
