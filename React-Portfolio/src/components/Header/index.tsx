@@ -8,10 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Button } from '../../styles/styles'
 import { useThemeContext } from '../../context/ThemeContext'
 import { FaSun, FaMoon } from 'react-icons/fa';
-import LanguageSwitcher from '../Language/index';
 import Settings from '../Settings/SettingsButton';
-import AudioPlayer from '../Music/AudioPlayer';
-import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 
 export function Header() {
@@ -20,13 +17,6 @@ export function Header() {
   const handleOpen = () => {
     setOpen(!open);
   };
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return (
     <HeaderContainer style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
@@ -41,7 +31,7 @@ export function Header() {
               alt="logo"
             />
           </div>
-          <span>{currentLang === 'ta' ? 'Jiphin George' : 'Jiphin George'}</span>
+          <span>Jiphin George</span>
         </Link>
         <div className="settings">
           <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
@@ -66,28 +56,28 @@ export function Header() {
         <ul>
           <li>
             <Link href={'/'}>
-              <span>{currentLang === 'ta' ? 'முகப்பு' : 'Home'}</span>
+              <span>Home</span>
             </Link>
           </li>
           <li>
             <Link href={'/about'}>
-              <span>{currentLang === 'ta' ? 'பற்றி' : 'About'}</span>
+              <span>About</span>
             </Link>
           </li>
 
           <li>
             <Link href={'/projects'}>
-              <span>{currentLang === 'ta' ? 'திட்டங்கள்' : 'Projects'}</span>
+              <span>Projects</span>
             </Link>
           </li>
           <li>
             <Link href={'/resume'}>
-              <span>{currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}</span>
+              <span>Resume</span>
             </Link>
           </li>
           <li>
             <Link href={'/contact'}>
-              <span>{currentLang === 'ta' ? 'தொடர்பு' : 'Contact'}</span>
+              <span>Contact</span>
             </Link>
           </li>
         </ul>
@@ -95,25 +85,25 @@ export function Header() {
           <Link
             href={'https://github.com/JiphinGeorge'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}>
+            aria-label="Link to Github">
             <FiGithub />
           </Link>
           <Link
             href={'#'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}>
+            aria-label="Link to Linkedin">
             <FiLinkedin />
           </Link>
           <Link
             href={'#'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}>
+            aria-label="Instagram">
             <FiInstagram />
           </Link>
           <Link
             href={'#'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'வாட்ஸ்அப் மூலம் தொடர்பு கொள்ள' : 'Link to contact via WhatsApp'}>
+            aria-label="Link to contact via WhatsApp">
             <FaWhatsapp />
           </Link>
         </Icons>

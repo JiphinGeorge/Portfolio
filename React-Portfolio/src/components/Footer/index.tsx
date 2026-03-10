@@ -1,30 +1,20 @@
 import Link from 'next/link'
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 import { FooterContainer, FooterContent } from './styles'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 
 export function Footer() {
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return (
     <FooterContainer>
       <FooterContent>
-        <h4> &copy; {new Date().getFullYear()} {currentLang === 'ta' ? 'Jiphin George' : 'Jiphin George'}</h4>
+        <h4> &copy; {new Date().getFullYear()} Jiphin George</h4>
         <div className="footer_links">
-        <Link href={'/privacypolicy'} aria-label={currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'} legacyBehavior>
-          {currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'}
+        <Link href={'/privacypolicy'} aria-label="Privacy Policy" legacyBehavior>
+          Privacy Policy
         </Link>
-        <Link href={'/terms&condition'} aria-label={currentLang === 'ta' ? 'விதிமுறைகள் & நிபந்தனைகள்' : 'Terms & Conditions'} legacyBehavior>
-          {currentLang === 'ta' ? 'விதிமுறைகள் & நிபந்தனைகள்' : 'Terms & Conditions'}
+        <Link href={'/terms&condition'} aria-label="Terms & Conditions" legacyBehavior>
+          Terms & Conditions
         </Link>
         </div>
       </FooterContent>
@@ -32,28 +22,28 @@ export function Footer() {
         <Link
           href={'https://github.com/JiphinGeorge'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}
+          aria-label="Link to Github"
         >
           <FiGithub />
         </Link>
         <Link
           href={'#'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}
+          aria-label="Link to Linkedin"
         >
           <FiLinkedin />
         </Link>
         <Link
           href={'#'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}
+          aria-label="Instagram"
         >
           <FiInstagram />
         </Link>
         <Link
           href={'#'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'ட்விட்டர்' : 'Twitter'}
+          aria-label="Twitter"
         >
           <FiTwitter />
         </Link>

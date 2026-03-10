@@ -3,19 +3,9 @@ import Link from 'next/link'
 import { Button, Container, ButtonAlternatives } from '../../styles/styles'
 import { AboutContainer } from './styles'
 import { ArrowRight, TelegramLogo } from 'phosphor-react'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 
 export function About() {
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return (
     <Container>
@@ -45,7 +35,7 @@ export function About() {
           <div className='aboutButton'>
             <Link href={'/resume'}>
               <Button>
-                {currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}
+                Resume
                 <TelegramLogo
                   style={{
                     marginBottom: '-0.1rem',
@@ -58,7 +48,7 @@ export function About() {
             </Link>
             <Link href={'/about'}>
               <ButtonAlternatives>
-                {currentLang === 'ta' ? 'மேலும் வாசிக்க' : 'Read more'}
+                Read more
                 <ArrowRight
                   style={{
                     marginBottom: '-0.1rem',

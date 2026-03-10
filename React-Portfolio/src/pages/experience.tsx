@@ -5,55 +5,40 @@ import experiences from '../data/experiences'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
-import { Work } from '../components/Volunteer'
-import { ScrollTop } from '../components/ScrollTop'
-import { Certificates } from '../components/Certificates'
+
 import { Section, Title, Description, Button } from '../styles/styles'
 import { TabButton, TabContent, TabsContainer } from '../styles/experience'
 import { Briefcase } from 'phosphor-react'
 import works from '../data/experiences'
 import { Education } from '../components/Education'
-import Link from 'next/link'
-import Testimonials from '../components/Testimonials'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { ScrollTop } from '../components/ScrollTop'
 import React from 'react'
 
 
 export default function Experience() {
   const [tabIndex, setTabIndex] = useState(0);
   let numbering = 0;
-
   const [query, setQuery] = useState("");
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
-
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return (
     <div>
       <Head>
-        <title>{currentLang === 'ta' ? 'அனுபவம் | Jiphin George' : 'Experience | Jiphin George'}</title>
+        <title>Experience | Jiphin George</title>
       </Head>
 
       <ScrollTop />
       <Section>
         <Title>
-          <p>../{currentLang === 'ta' ? 'அனுபவம்' : 'experience'}</p>
-          {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}
+          <p>../experience</p>
+          Experience
           <span>
-            <Briefcase /> {currentLang === 'ta' ? 'வேலை' : 'Work'}
+            <Briefcase /> Work
           </span>
         </Title>
 
         <Description>
           <p>
-            {currentLang === 'ta' ? 'நான் 2 ஆண்டுகளுக்கும் மேலாக டெவலப்பராக பணியாற்றி வருகிறேன். நான் சிறிய அளவிலிருந்து பெரிய அளவிலான பல திட்டங்களில் பணியாற்றியுள்ளேன், மேலும் பல்வேறு தொழில்நுட்பங்களுடன் பணியாற்றும் அனுபவம் எனக்கு உள்ளது.' : 'I have been working as a developer for over 2 years. I have worked on many projects, from small to large scale, and I have experience working with many different technologies.'}
+            I have been working as a developer for over 2 years. I have worked on many projects, from small to large scale, and I have experience working with many different technologies.
           </p>
         </Description>
 
@@ -69,7 +54,7 @@ export default function Experience() {
               <TabList className="tab__list">
                 {works &&
                   works.map(exp => {
-                    const description = exp.description[currentLang];
+                    const description = exp.description;
                     if (exp.id) {
                       numbering += 1;
                       return (
@@ -80,7 +65,7 @@ export default function Experience() {
                               : `${numbering - 1}`}
                           </h2>
                           <Tab className="tab">
-                            <button>{exp.title[currentLang]}</button>
+                            <button>{exp.title}</button>
                           </Tab>
                         </React.Fragment>
                       );
@@ -95,13 +80,13 @@ export default function Experience() {
                     <div className="title-container">
                       <div className="title-content">
                         <div className="title">
-                          <h1>{exp.title[currentLang]}</h1>
+                          <h1>{exp.title}</h1>
                           <div className="sub"></div>
-                          <h2>{exp.subTitle[currentLang]}</h2>
+                          <h2>{exp.subTitle}</h2>
                         </div>
                       </div>
                       <div className="office">
-                        <h3>{exp.office[currentLang]}</h3>
+                        <h3>{exp.office}</h3>
                         <h4>{exp.date}</h4>
                       </div>
                     </div>
@@ -112,7 +97,7 @@ export default function Experience() {
                         marginBottom: '1rem'
                       }}
                     >
-                      {exp.description[currentLang] ? exp.description[currentLang].split('\n').map((line, i) => (
+                      {exp.description ? exp.description.split('\n').map((line, i) => (
                         <React.Fragment key={i}>
                           {line}
                           <br />
@@ -127,12 +112,12 @@ export default function Experience() {
                       className="links"
                     >
                       <a href={exp.link} target="_blank" rel="noreferrer">
-                        <Button>{currentLang === 'ta' ? 'அறிக்கையைப் பார்க்கவும்' : 'View Report'}</Button>
+                        <Button>View Report</Button>
                       </a>
                     </div>
 
                     <div className="techs">
-                      <h3>{currentLang === 'ta' ? 'தொழில்நுட்பங்கள்:' : 'Techs:'}</h3>
+                      <h3>Techs:</h3>
                       <ul>
                         {exp.tags.map(tag => (
                           <div className="tags" key={tag.name}>
@@ -152,10 +137,7 @@ export default function Experience() {
             </TabContent>
           </Tabs>
         </TabsContainer>
-        <Work />
-        <Testimonials />
-        <Education />
-        <Certificates />
+
       </Section>
       <Footer />
     </div>
