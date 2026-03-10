@@ -69,7 +69,7 @@ export default function About() {
                   <AiFillGithub size={25} />@JiphinGeorge
                 </Link>
                 <Link
-                  href={'#'}
+                  href={'https://www.linkedin.com/in/jiphin-george-89315b295/'}
                   target="_blank"
                   aria-label="Linkedin">
 
@@ -83,7 +83,7 @@ export default function About() {
                   <RiWhatsappFill size={25} />WhatsApp
                 </Link>
                 <Link
-                  href={'#'}
+                  href={'mailto:jiphingeorge80@gmail.com'}
                   className="email"
                   target="_blank"
                   aria-label="email">

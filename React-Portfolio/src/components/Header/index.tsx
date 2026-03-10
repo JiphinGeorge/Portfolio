@@ -89,13 +89,13 @@ export function Header() {
             <FiGithub />
           </Link>
           <Link
-            href={'#'}
+            href={'https://www.linkedin.com/in/jiphin-george-89315b295/'}
             target="_blank"
             aria-label="Link to Linkedin">
             <FiLinkedin />
           </Link>
           <Link
-            href={'#'}
+            href={'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'}
             target="_blank"
             aria-label="Instagram">
             <FiInstagram />

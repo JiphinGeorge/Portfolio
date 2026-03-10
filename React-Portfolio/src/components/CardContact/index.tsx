@@ -51,21 +51,7 @@ export function CardContact() {
             />
           </ButtonAlt>
         </Link>
-        <Link href="https://forms.visme.co/formsPlayer/kkjne993-saravana-039-s-portfolio" legacyBehavior>
-          <ButtonSecondary style={{
-            marginTop: '1rem',
-          }}>
-            Write a feedback{' '}
-            <Pen
-              style={{
-                marginBottom: '-0.1rem',
-                marginLeft: '0.2rem'
-              }}
-              size={16}
-              weight="bold"
-            />
-          </ButtonSecondary>
-        </Link>
+
       </CardContactContainer>
     </Section>
   );

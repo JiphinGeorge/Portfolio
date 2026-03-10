@@ -12,7 +12,7 @@ export function Links() {
             <FiGithub />
           </a>
         </Link>
-        <Link href={'#'}>
+        <Link href={'https://www.linkedin.com/in/jiphin-george-89315b295/'}>
           <a target="_blank" aria-label="Link para o Linkedin">
             <FiLinkedin />
           </a>

@@ -29,7 +29,6 @@ export interface Team {
   img: string
   github: string
   linkedin: string
-  twitter: string
   instagram: string
 }
 

@@ -43,8 +43,7 @@ const projects = [
         img: '/projects/Teams/Saravana.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'
       },
     ],
     status: 'Completed',
@@ -87,8 +86,7 @@ const projects = [
         img: '/projects/Teams/Saravana.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'
       },
     ],
     status: 'Completed',
@@ -137,8 +135,7 @@ const projects = [
         img: '/projects/Teams/Saravana.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'
       },
     ],
     status: 'In Progress',

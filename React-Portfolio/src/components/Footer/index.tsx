@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
 import { FooterContainer, FooterContent } from './styles'
 
 export function Footer() {
@@ -27,25 +27,18 @@ export function Footer() {
           <FiGithub />
         </Link>
         <Link
-          href={'#'}
+          href={'https://www.linkedin.com/in/jiphin-george-89315b295/'}
           target="_blank"
           aria-label="Link to Linkedin"
         >
           <FiLinkedin />
         </Link>
         <Link
-          href={'#'}
+          href={'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'}
           target="_blank"
           aria-label="Instagram"
         >
           <FiInstagram />
-        </Link>
-        <Link
-          href={'#'}
-          target="_blank"
-          aria-label="Twitter"
-        >
-          <FiTwitter />
         </Link>
       </div>
     </FooterContainer>

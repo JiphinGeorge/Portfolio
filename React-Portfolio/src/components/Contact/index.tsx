@@ -31,7 +31,7 @@ export function Contact() {
             <h4>
               <LinkedinLogo size={22} color="#00fffb" /> Linkedin{' '}
             </h4>
-            <Link href="#" target="_blank">
+            <Link href="https://www.linkedin.com/in/jiphin-george-89315b295/" target="_blank">
               <span>JiphinGeorge</span>
             </Link>
           </div>
@@ -41,8 +41,8 @@ export function Contact() {
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
             </h4>
-            <Link href="#" target="_blank">
-              <span>Email Contact</span>
+            <Link href="mailto:jiphingeorge80@gmail.com" target="_blank">
+              <span>jiphingeorge80@gmail.com</span>
             </Link>
           </div>
         </ContactContent>

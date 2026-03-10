@@ -13,7 +13,7 @@ const meta = {
   description:
     'Jiphin George Portfolio',
   image:
-    'https://raw.githubusercontent.com/Saravanakumar2003/Portfolio/main/public/ogimage.png'
+    '/ogimage.png'
 }
 
 export default class MyDocument extends Document {
@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-EN">
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <meta name="author" content="Jiphin George" />
@@ -49,13 +49,13 @@ export default class MyDocument extends Document {
           <meta itemProp="image" content={meta.image} />
           <meta
             name="keywords"
-            content="Saravanakumar, website, programador, front-end, personal website, developer, portfolio, sites, web, JavaScript, TypeScript, ReactJS, NextJS, software, Freelancer, portfolio developer, Saravanakumar portfolio"
+            content="Jiphin George, developer, portfolio, Flutter, Python, web development, software, MCA, personal website, JavaScript, ReactJS, NextJS"
           />
-          <meta name="copyright" content="Jiphin George 2024" />
+          <meta name="copyright" content="Jiphin George 2025" />
           <meta name="robots" content="index, follow" />
-          <meta name="language" content="pt-EN" />
+          <meta name="language" content="en" />
           <meta name="rating" content="general" />
-          <link rel="canonical" href="https://saravana.vercel.app/" />
+          <link rel="canonical" href="https://jiphingeorge.vercel.app/" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -81,7 +81,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <meta property="og:url" content="https://saravana.vercel.app/" />
+          <meta property="og:url" content="https://jiphingeorge.vercel.app/" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Jiphin George" />
           <meta property="og:title" content={meta.title} />
