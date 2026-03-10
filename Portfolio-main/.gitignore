@@ -1,7 +1,0 @@
-node_modules
-.next
-
-.env
-.vercel
-.vscode
-translate.ts
