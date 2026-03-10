@@ -13,9 +13,7 @@ import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo, Hash, Ins
 import * as S from '../styles/about'
 import { ButtonAlt, Section, Title, ButtonSecondary } from '../styles/styles'
 import { Instagram } from './api/Instagram'
-import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 import React from 'react'
 import { Linkedin } from './api/Linkedin'
 
@@ -23,26 +21,19 @@ interface DashboardPageProps {
   fallback: any;
 }
 export default function About() {
-  const { t, i18n } = useTranslation('common'); // Use the 'common' namespace
   const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
-
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return <>
     <Head>
-      <title>{currentLang === 'ta' ? 'பற்றி | Jiphin George' : 'About | Jiphin George'}</title>
+      <title>About | Jiphin George</title>
       <meta
         name="description"
-        content={currentLang === 'ta' ? 'நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : 'I am Jiphin George, a passionate developer building a solid foundation in technology.'}
+        content="I am Jiphin George, a passionate developer building a solid foundation in technology."
       />
-      <meta property="og:title" content={currentLang === 'ta' ? 'பற்றி | Jiphin George' : 'About | Jiphin George'} />
+      <meta property="og:title" content="About | Jiphin George" />
       <meta
         property="og:description"
-        content={currentLang === 'ta' ? 'நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : 'I am Jiphin George, a passionate developer building a solid foundation in technology.'}
+        content="I am Jiphin George, a passionate developer building a solid foundation in technology."
       />
     </Head>
 
@@ -50,10 +41,10 @@ export default function About() {
     <Section>
       <S.AboutContainer>
         <Title>
-          <p>{currentLang === 'ta' ? '../பற்றி' : '../about'}  </p>
-          {currentLang === 'ta' ? 'என்னைப் பற்றி!!' : 'About Myself!!'}
+          <p>../about</p>
+          About Myself!!
           <span>
-            <BiUserPin /> {currentLang === 'ta' ? 'பற்றி' : 'About'}
+            <BiUserPin /> About
           </span>
         </Title>
 
@@ -104,12 +95,12 @@ export default function About() {
 
             <S.AboutContact>
               <h3>
-                {currentLang === 'ta' ? 'நாம் பேசலாம், ஒருவேளை ஒரு அற்புதமான திட்டத்தை உருவாக்கலாம்?' : 'Lets talk, maybe create an amazing project together?'}
+                Lets talk, maybe create an amazing project together?
               </h3>
-              <p>{currentLang === 'ta' ? 'எனக்கு ஒரு செய்தி அனுப்புங்கள்! 😉' : 'Send me a message! 😉'}</p>
+              <p>Send me a message! 😉</p>
               <Link href={'/contact'}>
 
-                <ButtonAlt>{currentLang === 'ta' ? 'தொடர்பு கொள்ளவும்' : 'Contact'}</ButtonAlt>
+                <ButtonAlt>Contact</ButtonAlt>
 
               </Link>
             </S.AboutContact>
@@ -144,7 +135,7 @@ export default function About() {
               weight="bold"
               size={18}
             />{' '}
-            {currentLang === 'ta' ? 'திரும்பி செல்' : 'Go Back'}
+            Go Back
           </a>
         </ButtonSecondary>
       </Link>
