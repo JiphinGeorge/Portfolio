@@ -1,136 +1,186 @@
+# 🌐 Jiphin George — Personal Portfolio
 
-<h1 align="center" id="title">Personal Portfolio</h1>
+A modern, responsive personal portfolio website built with **Next.js 14**, **TypeScript**, and **Styled Components**. Showcasing my projects, skills, experience, education, and certifications.
 
-<p align="center"><img src="https://socialify.git.ci/Saravanakumar2003/Portfolio/image?description=1&amp;font=Inter&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
+� **Live:** [jiphingeorge.vercel.app](https://jiphingeorge.vercel.app)
 
-<p id="description">Welcome to my personal portfolio website repository! This project serves as the codebase for my online portfolio showcasing my skills projects and experiences. Feel free to explore the code and provide feedback to help me improve.</p>
+---
 
-<h2>🚀 Demo</h2>
+## ✨ Features
 
-[https://saravana.vercel.app/](https://saravana.vercel.app/)
+- **Interactive Home** — Animated hero section with particle background, typewriter effect, and 3D card modal
+- **About Me** — Personal bio with social links (GitHub, LinkedIn, Instagram, WhatsApp, Email)
+- **Projects Gallery** — Detailed project pages with tech stack, screenshots, video demos, Trello board integration, and team contributors
+- **Skills Grid** — Visual skill cards with colored icons for 14 technologies
+- **Experience Timeline** — Professional experience displayed in a vertical timeline
+- **Education & Certifications** — Academic background and certificate PDFs
+- **Contact Form** — Email.js-powered contact form with Calendly meeting scheduler
+- **GitHub Activity** — Live GitHub contribution calendar and stats
+- **Resume Page** — Embedded Canva resume with download option
+- **Dark/Light Mode** — Theme toggle with smooth transitions
+- **Responsive Design** — Mobile-first, works on all screen sizes
+- **Page Transitions** — Smooth route animations with Framer Motion
+- **SEO Optimized** — Meta tags, Open Graph, Twitter cards
+- **Cookie Consent** — GDPR-compliant cookie banner
+- **404 Page** — Custom error page
+- **Privacy Policy & Terms** — Legal pages
 
-<h2>🛠️ Installation Steps:</h2>
+---
 
-<p>1. Clone the repository</p>
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 14, React 18 |
+| **Language** | TypeScript |
+| **Styling** | Styled Components, CSS |
+| **Animations** | Framer Motion, React Spring |
+| **Icons** | Phosphor React, React Icons |
+| **Forms** | React Hook Form, Zod, Email.js |
+| **Analytics** | Vercel Analytics, Google Analytics (react-ga4) |
+| **UI Libraries** | Mantine, React Modal, React Tabs |
+| **Media** | React Player, React Responsive Carousel, React Slick |
+| **Deployment** | Vercel |
+
+---
+
+## 📁 Project Structure
 
 ```
-git clone https://github.com/Saravanakumar2003/Portfolio.git
+Portfolio/
+├── public/                  # Static assets
+│   ├── icons/               # Skill & tech icons (PNG, SVG)
+│   ├── projects/            # Project screenshots & team images
+│   ├── vectors/             # SVG illustrations
+│   ├── Gif/                 # Project preview GIFs
+│   ├── education/           # Education-related images
+│   ├── experience/          # Experience-related images
+│   ├── pdf/                 # Downloadable documents
+│   ├── *.pdf                # Certificate PDFs
+│   ├── jiphin.jpg           # Profile photo
+│   └── Logo1.png            # Favicon
+│
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── Home/            # Hero section + particle background
+│   │   ├── Header/          # Navigation bar with social links
+│   │   ├── Footer/          # Footer with copyright & links
+│   │   ├── CardAbout/       # About preview card
+│   │   ├── CardContact/     # Contact CTA card
+│   │   ├── Skills/          # Skills grid display
+│   │   ├── Projects/        # Project listing & blog cards
+│   │   ├── Experience/      # Experience timeline
+│   │   ├── Education/       # Education section
+│   │   ├── Educations/      # Certifications section
+│   │   ├── Contact/         # Contact form + Calendly embed
+│   │   ├── Github/          # GitHub activity calendar
+│   │   ├── Animations/      # Route transitions & fade-ins
+│   │   ├── Settings/        # Theme, music, font size controls
+│   │   ├── Links/           # Sidebar social links
+│   │   ├── ScrollTop/       # Scroll-to-top button
+│   │   ├── Cookies/         # Cookie consent banner
+│   │   ├── CV/              # Resume/CV component
+│   │   ├── Certifications/  # Certificate viewer
+│   │   └── Toaster/         # Toast notifications
+│   │
+│   ├── pages/               # Next.js pages (routes)
+│   │   ├── index.tsx         # Home page (/)
+│   │   ├── about.tsx         # About page (/about)
+│   │   ├── contact.tsx       # Contact page (/contact)
+│   │   ├── projects.tsx      # Projects listing (/projects)
+│   │   ├── project/[id].tsx  # Dynamic project detail page
+│   │   ├── experience.tsx    # Experience page (/experience)
+│   │   ├── resume.tsx        # Resume page (/resume)
+│   │   ├── privacypolicy.tsx  # Privacy Policy
+│   │   ├── terms&condition.tsx # Terms & Conditions
+│   │   ├── 404.tsx           # Custom 404 page
+│   │   ├── _app.tsx          # App wrapper (providers, global styles)
+│   │   ├── _document.tsx     # Document head (SEO, fonts, meta)
+│   │   └── api/              # API routes & widget components
+│   │
+│   ├── data/                 # Static data files
+│   │   ├── skills.ts         # Skills list (14 technologies)
+│   │   ├── projects.ts       # Project entries with details
+│   │   ├── experiences.ts    # Work experience data
+│   │   ├── educations.ts     # Education history
+│   │   ├── certifications.ts # Certification details
+│   │   └── github.json       # GitHub config
+│   │
+│   ├── context/              # React contexts (Theme)
+│   ├── hooks/                # Custom hooks
+│   ├── styles/               # Styled-components themes & globals
+│   ├── types/                # TypeScript interfaces
+│   └── utils/                # Utility functions
+│
+├── next.config.js            # Next.js configuration
+├── tsconfig.json             # TypeScript config
+├── package.json              # Dependencies & scripts
+└── .env.local                # Environment variables (not committed)
 ```
 
-<p>2. Navigate to the project directory</p>
+---
 
-```
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** 18+ 
+- **npm** 9+
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/JiphinGeorge/Portfolio.git
+
+# Navigate to project
 cd Portfolio
-```
 
-<p>3. Install dependencies</p>
-
-```
+# Install dependencies
 npm install
-```
 
-<p>4. Start the development server</p>
-
-```
+# Start development server
 npm run dev
 ```
 
-<p>5. Visit http://localhost:3000 to see the portfolio in action.</p>
-
-```
-http://localhost:3000
-```
-
-  
-  
-<h2>💻 Built with</h2>
-
-### Technologies
-
-1. **Next.js:** A React framework that enables server-side rendering and efficient web development.
-
-2. **React.js:** A JavaScript library for building user interfaces, providing a modular and reusable component-based structure.
-
-3. **TypeScript:** A typed superset of JavaScript, enhancing code maintainability and catching errors during development.
-
-### Integrations
-
-1. **GitHub:** Integration with GitHub allows dynamic fetching and display of GitHub-related data, such as followers, following, total stars and contributions.
-
-2. **EmailJS:** Integration with EmailJS facilitates sending emails directly from the portfolio website. API keys and setup instructions can be obtained from the [EmailJS website](https://www.emailjs.com/).
-
-3. **Hashnode Blog:** Integration with Hashnode for blogging features, connecting the portfolio to a Hashnode blog. Configure the integration through Hashnode's documentation.
-
-4. **Instagram Widget:** Embedding an Instagram widget to display recent posts. Obtain the required code or API key from the [Behold.so](https://app.behold.so/).
-
-5.  **Canva Iframe:** Integrating Canva through an iframe allows showcasing designs and graphics. To embed Canva content, obtain the embed code from the Canva platform.
-
-6. **Calendly Iframe:** Embedding Calendly through an iframe enables users to schedule appointments. To include a Calendly scheduling widget, get the embed code from the Calendly website.
-
-7. **Analytics:** Analytics for this personal portfolio are managed using Vercel and Google Analytics to gather insights into visitor behaviour and engagement. 
-
-8. **Testimonials.to:** Integration with Testimonials.to allows displaying testimonials from clients and users. Obtain the required code from the Testimonials.to the platform.
-
-9. **Visme Feedback Form:** A feedback form powered by Visme is included in the portfolio for collecting user feedback and suggestions.
-
-10. **Giscus Comments:** Integration with Giscus allows enabling comments on blog posts using GitHub Discussions. Configure Giscus by following the instructions on the [Giscus GitHub repository](https://giscus.app/).
-
-11. **Waka Time:** Integration with WakaTime embeded code allows displaying coding activity and statistics.
-
-12. **Trello Intergration:** Integration with Trello embeded code allows displaying Trello boards and tasks. 
-
-# Deployment
-
-This personal portfolio is deployed using Vercel, providing a seamless and scalable hosting solution. Below are details on how the deployment is managed.
-
-## Vercel Deployment
-
-The project is deployed on [Vercel](https://vercel.com/), a cloud platform that offers a straightforward and efficient deployment process.
-
-### Automatic Deployment
-
-The deployment is set up for automatic deployment on Vercel. Any changes pushed to the main branch trigger a new deployment, ensuring that the live version is always up-to-date.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Environment Variables
 
-Ensure to set up the necessary environment variables on the Vercel platform for your portfolio. Key environment variables, such as API keys or configuration settings, can be securely stored and managed in the Vercel dashboard.
+Create a `.env.local` file in the root with the following variables:
 
-To set up environment variables in Vercel:
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+NEXT_PUBLIC_CALENDLY_URL=your_calendly_url
+NEXT_PUBLIC_PORTFOLIO_CALENDER_URL=your_google_calendar_url
+```
 
-1. Navigate to your Vercel project dashboard.
-2. Go to the "Settings" tab.
-3. Find the "Environment Variables" section.
-4. Add the required variables.
+### Build for Production
 
-## Continuous Monitoring
+```bash
+npm run build
+npm run start
+```
 
-Vercel provides built-in analytics to monitor deployments and performance metrics. The Vercel dashboard can track deployment history and identify potential issues.
+---
 
+## 📬 Contact
 
-## How to Contribute
+- **Email:** [jiphingeorge80@gmail.com](mailto:jiphingeorge80@gmail.com)
+- **LinkedIn:** [linkedin.com/in/jiphin-george-89315b295](https://www.linkedin.com/in/jiphin-george-89315b295/)
+- **GitHub:** [github.com/JiphinGeorge](https://github.com/JiphinGeorge)
+- **Instagram:** [instagram.com/jiphin_george](https://www.instagram.com/jiphin_george)
 
-If you'd like to contribute to the project, follow these steps:
+---
 
-1. Fork the repository.
-2. Create a new branch: ```git checkout -b feature/new-feature```
-3. Make your changes and commit them: ```git commit -m 'Add new feature'```
-4. Push to the branch: ```git push origin feature/new-feature```
-5. Submit a pull request.
+## 📄 License
 
-# Final Notes
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
-Thank you for exploring my personal portfolio project! I hope you found it insightful and engaging. Feel free to provide feedback or suggestions to help enhance the portfolio further. Your support and input are greatly appreciated!
+---
 
-### Acknowledgements
-
-This portfolio project's initial design and code structure were inspired by the [Evander Inacio Portfolio](https://github.com/EvanderInacio/Portfolio) repository. Permission to use and modify the code was graciously granted by the author, <strong>Evander Inacio</strong>, via email correspondence. Proper credit has been attributed to the original creator in accordance with their consent.
-
-Later all the several above modifications and enhancements were made to personalize the portfolio. The project continues to evolve with additional sections, integrations, and improvements.
-
-## Author
-
-👤 **Saravanakumar**
-
-- GitHub: [@Saravanakumar2003](https://github.com/Saravanakumar2003)
-- Portfolio: [saravana.vercel.app](https://saravana.vercel.app)
-- LinkedIn: [Saravanakumar](https://www.linkedin.com/in/saravanakumar2003/)
+<p align="center">
+  Built with ❤️ by <strong>Jiphin George</strong>
+</p>

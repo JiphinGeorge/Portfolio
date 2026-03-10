@@ -24,11 +24,9 @@ export default function TermsAndConditions() {
         <p>The content on this website, including text, images, and design, is for personal, informational, and non-commercial use only. You may not copy, reproduce, distribute, or use any content without prior written permission.</p>
 
         <h3>3. Ownership and Attribution</h3>
-        <p>Jiphin George&apos;s Portfolio is based on the project Evander Inacio Portfolio, which was originally developed and publicly shared on GitHub by Evander Inacio.</p>
-        <p>The project Evander Inacio Portfolio is not open-source, and its use and distribution are subject to the original creator&apos;s terms.</p>
-        <p>Special thanks to Evander Inacio for granting permission to use and build upon his project. This project has since evolved with numerous enhancements and new features while maintaining proper attribution to the original creator.</p>
-        <p>Modifications and additional features to the site were made by Jiphin George for personal use and are not intended for redistribution or commercial use without proper authorization.</p>
-        <p>Disclaimer: The creator of Jiphin George&apos;s Portfolio does not claim ownership of the original &quot;Evander Inacio&quot; project or its intellectual property. All rights to the original code are retained by the original creator.</p>
+        <p>This portfolio was built by Jiphin George for personal and professional use.</p>
+        <p>All content, design modifications, and additional features are the intellectual property of Jiphin George unless otherwise stated.</p>
+        <p>This project is licensed under the MIT License. Unauthorized redistribution or commercial use without proper authorization is prohibited.</p>
 
         <h3>4. User Responsibilities</h3>
         <p>When using forms or interacting with the website, you agree to:</p>
