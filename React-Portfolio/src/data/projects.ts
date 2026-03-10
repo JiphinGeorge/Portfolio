@@ -40,7 +40,7 @@ const projects = [
         id: '1',
         name: 'Jiphin George',
         role: 'Developer',
-        img: '/projects/Teams/Saravana.jpg',
+        img: '/projects/Teams/Jiphin.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
         instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'
@@ -83,7 +83,7 @@ const projects = [
         id: '1',
         name: 'Jiphin George',
         role: 'Developer',
-        img: '/projects/Teams/Saravana.jpg',
+        img: '/projects/Teams/Jiphin.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
         instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'
@@ -132,7 +132,7 @@ const projects = [
         id: '1',
         name: 'Jiphin George',
         role: 'Developer',
-        img: '/projects/Teams/Saravana.jpg',
+        img: '/projects/Teams/Jiphin.jpg',
         github: 'https://github.com/JiphinGeorge',
         linkedin: '#',
         instagram: 'https://www.instagram.com/jiphin_george?igsh=eWpiNGtlemdiZGJz'

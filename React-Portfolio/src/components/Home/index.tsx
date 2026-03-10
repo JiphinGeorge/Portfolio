@@ -131,10 +131,7 @@ export function HomeHero() {
               </ButtonPrimary>
             </Link>
 
-            {/* <ButtonPrimary onClick={openModal2}>
-              <b>{currentLang === 'ta' ? 'அட்டை உருவாக்கவும்' : 'Generate your card'}</b>
-              <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
-            </ButtonPrimary> */}
+
 
             <Modal
               isOpen={modalIsOpen2}
