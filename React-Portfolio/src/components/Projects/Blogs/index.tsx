@@ -3,23 +3,14 @@ import Image from 'next/image'
 import { AllContainer, AllContent, Cubo } from './styles'
 import { ButtonAlt } from '../../../styles/styles'
 import { AiOutlineAppstore } from 'react-icons/ai'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 interface AllContent {
   title: string
 }
 
 export function AllBlogs({ title }: AllContent) {
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
-  }, [router.locale]);
 
   return (
     <AllContainer>
@@ -27,7 +18,7 @@ export function AllBlogs({ title }: AllContent) {
       <AllContent>
         <Link href={'/blog'} legacyBehavior>
           <ButtonAlt>
-            {currentLang === 'ta' ? 'வலைப்பதிவுகள்' : 'Blogs'} <AiOutlineAppstore size={20} />
+            Blogs <AiOutlineAppstore size={20} />
           </ButtonAlt>
         </Link>
 

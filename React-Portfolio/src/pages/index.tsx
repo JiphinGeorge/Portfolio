@@ -9,6 +9,7 @@ import { Experience } from "../components/Experience";
 import { CardContact } from "../components/CardContact";
 import { LoadingScreen } from "../components/Animations/LoadingScreen";
 import { Education } from "../components/Education";
+import { Certifications } from "../components/Certifications";
 import { Section } from "../styles/styles";
 
 
@@ -52,6 +53,9 @@ export default function Home() {
         </FadeInAnimation>
         <FadeInAnimation>
           <Projects />
+        </FadeInAnimation>
+        <FadeInAnimation>
+          <Certifications />
         </FadeInAnimation>
         <FadeInAnimation>
           <CardContact />

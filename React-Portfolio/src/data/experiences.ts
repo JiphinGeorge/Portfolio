@@ -14,7 +14,7 @@ const experience = [
     date: 'August 2024',
     link: '#',
     link2: '#',
-    certificate: '#',
+    certificate: '/internship in the domain of Data Science.pdf',
   }
 ];
 
