@@ -30,12 +30,12 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | Saravanakumar </title>
+        <title>Projects | Jiphin George </title>
         <meta
           name="description"
           content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
         />
-        <meta property="og:title" content="Projects | Saravanakumar" />
+        <meta property="og:title" content="Projects | Jiphin George" />
         <meta
           property="og:description"
           content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
@@ -136,7 +136,7 @@ export default function Projects() {
         <Github />
         <p className="github">
               Hey, hey... I have more projects on{" "}
-              <a href="https://github.com/Saravanakumar2003" style={{textDecoration: 'underline',}}> my GitHub </a>
+              <a href="https://github.com/JiphinGeorge" style={{textDecoration: 'underline',}}> my GitHub </a>
               !!
         </p>
       </T.Section>

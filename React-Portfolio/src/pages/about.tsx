@@ -34,15 +34,15 @@ export default function About() {
 
   return <>
     <Head>
-      <title>{currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | Saravanakumar'}</title>
+      <title>{currentLang === 'ta' ? 'பற்றி | Jiphin George' : 'About | Jiphin George'}</title>
       <meta
         name="description"
-        content={currentLang === 'ta' ? 'நான் சரவணகுமார், வேலம்மல் பொறியியல் கல்லூரியின் மாணவர், எலக்ட்ரானிக்ஸ் மற்றும் கம்யூனிகேஷன் இன்ஜினியரிங் படித்து வருகிறேன் மற்றும் தொழில்நுட்பத்தில் ஒரு வலுவான அடித்தளத்தை உருவாக்குகிறேன்.' : 'I am Saravanakumar, a proud student of Velammal Engineering College, where I am pursuing a Bachelors degree in Electronics and Communication Engineering and building a solid foundation in technology.'}
+        content={currentLang === 'ta' ? 'நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : 'I am Jiphin George, a passionate developer building a solid foundation in technology.'}
       />
-      <meta property="og:title" content={currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | Saravanakumar'} />
+      <meta property="og:title" content={currentLang === 'ta' ? 'பற்றி | Jiphin George' : 'About | Jiphin George'} />
       <meta
         property="og:description"
-        content={currentLang === 'ta' ? 'நான் சரவணகுமார், வேலம்மல் பொறியியல் கல்லூரியின் மாணவர், எலக்ட்ரானிக்ஸ் மற்றும் கம்யூனிகேஷன் இன்ஜினியரிங் படித்து வருகிறேன் மற்றும் தொழில்நுட்பத்தில் ஒரு வலுவான அடித்தளத்தை உருவாக்குகிறேன்.' : 'I am Saravanakumar, a proud student of Velammal Engineering College, where I am pursuing a Bachelors degree in Electronics and Communication Engineering and building a solid foundation in technology.'}
+        content={currentLang === 'ta' ? 'நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : 'I am Jiphin George, a passionate developer building a solid foundation in technology.'}
       />
     </Head>
 
@@ -62,7 +62,7 @@ export default function About() {
             <Image
               className="AboutImg"
               src="/Saravana.jpg"
-              alt="Saravanakumar"
+              alt="Jiphin George"
               width={400}
               height={400}
               priority
@@ -71,33 +71,33 @@ export default function About() {
             <div className="links">
               <ul>
                 <Link
-                  href={'https://github.com/Saravanakumar2003'}
+                  href={'https://github.com/JiphinGeorge'}
                   target="_blank"
                   aria-label="Github">
 
-                  <AiFillGithub size={25} />@Saravanakumar2003
+                  <AiFillGithub size={25} />@JiphinGeorge
                 </Link>
                 <Link
-                  href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
+                  href={'#'}
                   target="_blank"
                   aria-label="Linkedin">
 
-                  <BsLinkedin size={25} />@saravanaramaswamy2003
+                  <BsLinkedin size={25} />Linkedin
                 </Link>
                 <Link
-                  href={'https://api.whatsapp.com/send?phone=918838416187'}
+                  href={'#'}
                   target="_blank"
                   aria-label="WhatsApp">
 
-                  <RiWhatsappFill size={25} />+91 8838416187
+                  <RiWhatsappFill size={25} />WhatsApp
                 </Link>
                 <Link
-                  href={'mailto:saravanaramaswamy2003@gmail.com'}
+                  href={'#'}
                   className="email"
                   target="_blank"
                   aria-label="email">
 
-                  <GrMail size={25} />saravanaramaswamy2003@gmail.com
+                  <GrMail size={25} />Email Contact
                 </Link>
               </ul>
             </div>
@@ -116,7 +116,7 @@ export default function About() {
           </S.AboutImage>
           <S.AboutDescription>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '👋 வணக்கம்! நான் சரவணகுமார், 🎓 வேலம்மல் பொறியியல் கல்லூரியின் பெருமைமிக்க பட்டதாரி, எலக்ட்ரானிக்ஸ் மற்றும் கம்யூனிகேஷன் இன்ஜினியரிங் படித்து வருகிறேன் மற்றும் தொழில்நுட்பத்தில் ஒரு வலுவான அடித்தளத்தை உருவாக்குகிறேன்.' : '👋 Hey there! I am Saravanakumar, 🎓 a proud graduate of Velammal Engineering College, where I am pursuing a Bachelors degree in Electronics and Communication Engineering and building a solid foundation in technology.'}
+              {currentLang === 'ta' ? '👋 வணக்கம்! நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : '👋 Hey there! I am Jiphin George, a passionate developer building a solid foundation in technology.'}
             </p>
             <p style={{ textAlign: 'justify' }}>
               {currentLang === 'ta' ? '💻 நான் ஒரு ஆர்வமுள்ள டெவலப்பர், ஆர்வமுள்ள தன்னார்வலர் மற்றும் பொது பேச்சாளர், மேலும் புதிய வாய்ப்புகள் மற்றும் வழிகளை ஆராய்வதில் நான் ஆர்வமாக இருக்கிறேன்.' : '💻 I am also an avid developer, enthusiastic volunteer, and public speaker, and I love exploring new opportunities and avenues.'}
@@ -140,31 +140,7 @@ export default function About() {
         </S.AboutContent>
       </S.AboutContainer>
 
-      {/* Social Begins */}
 
-      <Title>
-        {currentLang === 'ta' ? 'LinkedIn பதிவு' : 'LinkedIn Post'}
-        <span>
-          <BsLinkedin /> {currentLang === 'ta' ? 'சமீபத்திய' : 'Latest'}
-        </span>
-      </Title>
-      <S.InBox>
-        <Linkedin />
-      </S.InBox>
-      <Title>
-        {currentLang === 'ta' ? 'இன்ஸ்டாகிராம் பதிவு' : 'Instagram Post'}
-        <span>
-          < InstagramLogo /> {currentLang === 'ta' ? 'சமீபத்திய' : 'Latest'}
-        </span>
-      </Title>
-      <S.InBox>
-        <Instagram />
-      </S.InBox>
-      <a style={{ textAlign: 'center' }}>
-        {currentLang === 'ta' ? 'உங்கள் ❤️ ஐ காட்டுங்கள், விரும்பி கருத்து தெரிவிப்பதன் மூலம், மேலும் புதுப்பிப்புகளுக்கு எனது இன்ஸ்டாகிராமில் என்னை பின்தொடருங்கள்.' : 'Show your ❤️ by liking and commenting, Follow me on Instagram for more updates.'}
-      </a>
-
-      {/* Social Ends */}
 
       <Link href={'/#home'} legacyBehavior>
         <ButtonSecondary>

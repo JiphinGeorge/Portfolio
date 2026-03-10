@@ -175,7 +175,7 @@ export default function Github() {
           >
             <Image
               src={user?.avatar_url || ''}
-              alt="Saravana's Image"
+              alt="Jiphin's Image"
               width={150}
               height={150}
               style={{

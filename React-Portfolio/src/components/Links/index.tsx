@@ -7,12 +7,12 @@ export function Links() {
   return (
     <>
       <Icons>
-        <Link href={'https://github.com/Saravanakumar2003'}>
+        <Link href={'https://github.com/JiphinGeorge'}>
           <a target="_blank" aria-label="Link para o Github">
             <FiGithub />
           </a>
         </Link>
-        <Link href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}>
+        <Link href={'#'}>
           <a target="_blank" aria-label="Link para o Linkedin">
             <FiLinkedin />
           </a>

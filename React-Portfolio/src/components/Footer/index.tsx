@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
-        <h4> &copy; {new Date().getFullYear()} {currentLang === 'ta' ? 'சரவணகுமார் ராமசாமி' : 'Saravanakumar Ramaswamy'}</h4>
+        <h4> &copy; {new Date().getFullYear()} {currentLang === 'ta' ? 'Jiphin George' : 'Jiphin George'}</h4>
         <div className="footer_links">
         <Link href={'/privacypolicy'} aria-label={currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'} legacyBehavior>
           {currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'}
@@ -30,28 +30,28 @@ export function Footer() {
       </FooterContent>
       <div className="links">
         <Link
-          href={'https://github.com/Saravanakumar2003'}
+          href={'https://github.com/JiphinGeorge'}
           target="_blank"
           aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}
         >
           <FiGithub />
         </Link>
         <Link
-          href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
+          href={'#'}
           target="_blank"
           aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}
         >
           <FiLinkedin />
         </Link>
         <Link
-          href={'https://www.instagram.com/saravanakumar.me?utm_source=qr'}
+          href={'#'}
           target="_blank"
           aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}
         >
           <FiInstagram />
         </Link>
         <Link
-          href={'https://x.com/Saravanakumar16'}
+          href={'#'}
           target="_blank"
           aria-label={currentLang === 'ta' ? 'ட்விட்டர்' : 'Twitter'}
         >

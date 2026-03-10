@@ -41,7 +41,7 @@ export function Header() {
               alt="logo"
             />
           </div>
-          <span>{currentLang === 'ta' ? 'சரவணகுமார்' : 'Saravanakumar'}</span>
+          <span>{currentLang === 'ta' ? 'Jiphin George' : 'Jiphin George'}</span>
         </Link>
         <div className="settings">
           <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
@@ -74,16 +74,7 @@ export function Header() {
               <span>{currentLang === 'ta' ? 'பற்றி' : 'About'}</span>
             </Link>
           </li>
-          {/* <li>
-            <Link href={'/experience'}>
-              <span>{currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}</span>
-            </Link>
-          </li> */}
-          <li>
-            <Link href={'/blog'}>
-              <span>{currentLang === 'ta' ? 'பதிவு' : 'Blogs'}</span>
-            </Link>
-          </li>
+
           <li>
             <Link href={'/projects'}>
               <span>{currentLang === 'ta' ? 'திட்டங்கள்' : 'Projects'}</span>
@@ -102,25 +93,25 @@ export function Header() {
         </ul>
         <Icons>
           <Link
-            href={'https://github.com/Saravanakumar2003'}
+            href={'https://github.com/JiphinGeorge'}
             target="_blank"
             aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}>
             <FiGithub />
           </Link>
           <Link
-            href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
+            href={'#'}
             target="_blank"
             aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}>
             <FiLinkedin />
           </Link>
           <Link
-            href={'https://www.instagram.com/saravanakumar.me?utm_source=qr'}
+            href={'#'}
             target="_blank"
             aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}>
             <FiInstagram />
           </Link>
           <Link
-            href={'https://api.whatsapp.com/send?phone=918838416187'}
+            href={'#'}
             target="_blank"
             aria-label={currentLang === 'ta' ? 'வாட்ஸ்அப் மூலம் தொடர்பு கொள்ள' : 'Link to contact via WhatsApp'}>
             <FaWhatsapp />

@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
 
   const content = {
     title: {
-      en: 'Privacy Policy | Saravanakumar',
+      en: 'Privacy Policy | Jiphin George',
       ta: 'தனியுரிமைக் கொள்கை | சரவணகுமார்'
     },
     heading: {
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
       ta: 'கடைசியாக புதுப்பிக்கப்பட்டது: ஆகஸ்ட் 7, 2025'
     },
     intro: {
-      en: 'Your privacy is important to us. This Privacy Policy explains how Saravanakumar\'s Portfolio collects, uses, and protects your information when you interact with our website.',
+      en: 'Your privacy is important to us. This Privacy Policy explains how Jiphin George\'s Portfolio collects, uses, and protects your information when you interact with our website.',
       ta: 'உங்கள் தனியுரிமை எங்களுக்கு முக்கியமானது. இந்த தனியுரிமைக் கொள்கை சரவணகுமாரின் போர்ட்ஃபோலியோ எவ்வாறு உங்கள் தகவல்களை சேகரிக்கிறது, பயன்படுத்துகிறது மற்றும் பாதுகாக்கிறது என்பதை விளக்குகிறது.'
     },
     section1: {
@@ -160,7 +160,7 @@ export default function PrivacyPolicy() {
         ta: 'இந்த தனியுரிமைக் கொள்கை குறித்து உங்களுக்கு கேள்விகள் அல்லது கவலைகள் இருந்தால், எங்களைத் தொடர்பு கொள்ளுங்கள்:'
       },
       name: {
-        en: 'Saravanakumar R',
+        en: 'Jiphin George',
         ta: 'சரவணகுமார் R'
       },
       email: {

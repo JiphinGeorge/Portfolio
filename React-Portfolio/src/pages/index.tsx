@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <RouteTransition>
       <Head>
-        <title>{currentLang === 'ta' ? 'சரவணகுமாரின் போர்ட்ஃபோலியோ' : ' Saravanakumar\'s Portfolio'} </title>
+        <title>{currentLang === 'ta' ? 'Jiphin George Portfolio' : ' Jiphin George\'s Portfolio'} </title>
       </Head>
       <ScrollTop />
       <Section>
@@ -63,34 +63,10 @@ export default function Home() {
           <Education />
         </FadeInAnimation>
         <FadeInAnimation>
-          <Work_Experience/>
-        </FadeInAnimation>
-        <FadeInAnimation>
           <Experience />
         </FadeInAnimation>
         <FadeInAnimation>
-          <Work />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Achievements />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Publications />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Certificates />
-        </FadeInAnimation>
-        <FadeInAnimation>
           <Projects />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Wakatime />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Testimonials />
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Jokes />
         </FadeInAnimation>
         <FadeInAnimation>
           <CardContact />

@@ -41,8 +41,8 @@ export function Contact() {
             <h4>
               <LinkedinLogo size={22} color="#00fffb" /> Linkedin{' '}
             </h4>
-            <Link href="https://www.linkedin.com/in/saravanaramaswamy2003/" target="_blank">
-              <span>saravanaramaswamy2003</span>
+            <Link href="#" target="_blank">
+              <span>JiphinGeorge</span>
             </Link>
           </div>
 
@@ -51,8 +51,8 @@ export function Contact() {
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
             </h4>
-            <Link href="mailto:saravanaramaswamy2003@gmail.com" target="_blank">
-              <span>saravanaramaswamy2003@gmail.com</span>
+            <Link href="#" target="_blank">
+              <span>Email Contact</span>
             </Link>
           </div>
         </ContactContent>

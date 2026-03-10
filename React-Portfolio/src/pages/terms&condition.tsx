@@ -16,7 +16,7 @@ export default function TermsAndConditions() {
 
   const content = {
     title: {
-      en: 'Terms and Conditions | Saravanakumar',
+      en: 'Terms and Conditions | Jiphin George',
       ta: 'விதிமுறைகள் மற்றும் நிபந்தனைகள் | சரவணகுமார்'
     },
     heading: {
@@ -28,7 +28,7 @@ export default function TermsAndConditions() {
       ta: 'கடைசியாக புதுப்பிக்கப்பட்டது: ஆகஸ்ட் 7, 2025'
     },
     intro: {
-      en: 'Welcome to Saravanakumar\'s Portfolio. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions. If you do not agree with these terms, please do not use this site.',
+      en: 'Welcome to Jiphin George\'s Portfolio. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions. If you do not agree with these terms, please do not use this site.',
       ta: 'சரவணகுமாரின் போர்ட்ஃபோலியோவுக்கு வரவேற்கிறோம். இந்த இணையதளத்தை அணுகுவதன் மூலம் அல்லது பயன்படுத்துவதன் மூலம், பின்வரும் விதிமுறைகள் மற்றும் நிபந்தனைகளுக்கு இணங்க ஒப்புக்கொள்கிறீர்கள். இந்த விதிமுறைகளுடன் நீங்கள் உடன்படவில்லை என்றால், தயவுசெய்து இந்த தளத்தைப் பயன்படுத்த வேண்டாம்.'
     },
     section1: {
@@ -37,7 +37,7 @@ export default function TermsAndConditions() {
         ta: '1. விதிமுறைகளின் ஏற்புதல்'
       },
       content: {
-        en: 'By using Saravanakumar\'s Portfolio, you acknowledge that you have read, understood, and agree to these Terms and Conditions, along with the Privacy Policy.',
+        en: 'By using Jiphin George\'s Portfolio, you acknowledge that you have read, understood, and agree to these Terms and Conditions, along with the Privacy Policy.',
         ta: 'சரவணகுமாரின் போர்ட்ஃபோலியோவைப் பயன்படுத்துவதன் மூலம், தனியுரிமைக் கொள்கையுடன் சேர்ந்து இந்த விதிமுறைகள் மற்றும் நிபந்தனைகளை நீங்கள் படித்து, புரிந்துகொண்டு, ஒப்புக்கொண்டுள்ளீர்கள் என்பதை ஒப்புக்கொள்கிறீர்கள்.'
       }
     },
@@ -57,7 +57,7 @@ export default function TermsAndConditions() {
         ta: '3. உடைமை மற்றும் பங்களிப்பு'
       },
       content1: {
-        en: 'Saravanakumar\'s Portfolio is based on the project Evander Inacio Portfolio, which was originally developed and publicly shared on GitHub by Evander Inacio.',
+        en: 'Jiphin George\'s Portfolio is based on the project Evander Inacio Portfolio, which was originally developed and publicly shared on GitHub by Evander Inacio.',
         ta: 'சரவணகுமாரின் போர்ட்ஃபோலியோ இவான்டர் இனாசியோ போர்ட்ஃபோலியோ திட்டத்தை அடிப்படையாகக் கொண்டுள்ளது, இது முதலில் இவான்டர் இனாசியோவால் உருவாக்கப்பட்டு GitHub இல் பகிரப்பட்டது.'
       },
       content2: {
@@ -69,11 +69,11 @@ export default function TermsAndConditions() {
         ta: 'அவரது திட்டத்தைப் பயன்படுத்தவும் மேம்படுத்தவும் அனுமதி வழங்கியதற்காக இவான்டர் இனாசியோவுக்கு சிறப்பு நன்றி. அசல் உருவாக்கியவருக்கு சரியான பங்களிப்பை வழங்கும் அதே வேளையில், இந்த திட்டம் பல மேம்பாடுகள் மற்றும் புதிய அம்சங்களுடன் வளர்ச்சி அடைந்துள்ளது.'
       },
       content4: {
-        en: 'Modifications and additional features to the site were made by Saravanakumar R for personal use and are not intended for redistribution or commercial use without proper authorization.',
+        en: 'Modifications and additional features to the site were made by Jiphin George R for personal use and are not intended for redistribution or commercial use without proper authorization.',
         ta: 'தளத்தின் மாற்றங்கள் மற்றும் கூடுதல் அம்சங்கள் சரவணகுமார் R ஆல் தனிப்பட்ட பயன்பாட்டிற்காக செய்யப்பட்டன, மேலும் சரியான அங்கீகாரம் இல்லாமல் மறுவிநியோகம் அல்லது வணிக பயன்பாட்டிற்கு இவை நோக்கமாக இல்லை.'
       },
       disclaimer: {
-        en: 'Disclaimer: The creator of Saravanakumar\'s Portfolio does not claim ownership of the original "Evander Inacio" project or its intellectual property. All rights to the original code are retained by the original creator.',
+        en: 'Disclaimer: The creator of Jiphin George\'s Portfolio does not claim ownership of the original "Evander Inacio" project or its intellectual property. All rights to the original code are retained by the original creator.',
         ta: 'மறுப்பு: சரவணகுமாரின் போர்ட்ஃபோலியோவின் உருவாக்கியவர் அசல் "இவான்டர் இனாசியோ" திட்டம் அல்லது அதன் அறிவுசார் சொத்தின் உடைமையைக் கோரவில்லை. அசல் குறியீட்டின் அனைத்து உரிமைகளும் அசல் உருவாக்கியவரிடம் உள்ளன.'
       }
     },
@@ -129,7 +129,7 @@ export default function TermsAndConditions() {
         ta: '7. பொறுப்பின் வரம்பு'
       },
       content1: {
-        en: 'Saravanakumar\'s Portfolio is provided "as is," without warranties of any kind.',
+        en: 'Jiphin George\'s Portfolio is provided "as is," without warranties of any kind.',
         ta: 'சரவணகுமாரின் போர்ட்ஃபோலியோ "அது உள்ளபடியே" வழங்கப்படுகிறது, எந்த வகையான உத்தரவாதமும் இல்லை.'
       },
       content2: {
@@ -185,7 +185,7 @@ export default function TermsAndConditions() {
         ta: 'இந்த விதிமுறைகள் மற்றும் நிபந்தனைகள் அல்லது அசல் திட்ட பங்களிப்பு பற்றிய கேள்விகளுக்கு, தொடர்பு கொள்ளுங்கள்:'
       },
       name: {
-        en: 'Saravanakumar R',
+        en: 'Jiphin George R',
         ta: 'சரவணகுமார் R'
       },
       website: {
