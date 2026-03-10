@@ -26,7 +26,7 @@ export function About() {
             height={200}
             className="AboutImg"
             src="/Professional_edited.jpg"
-            alt="Saravana's Image"
+            alt="Jiphin's Image"
             loading="lazy"
           />
         </div>
