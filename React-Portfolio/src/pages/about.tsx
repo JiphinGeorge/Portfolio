@@ -116,25 +116,19 @@ export default function About() {
           </S.AboutImage>
           <S.AboutDescription>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '👋 வணக்கம்! நான் Jiphin George, ஒரு ஆர்வமுள்ள டெவலப்பர்.' : '👋 Hey there! I am Jiphin George, a passionate developer building a solid foundation in technology.'}
+              👋 I am Jiphin George, an MCA student at Mar Athanasius College of Engineering (MACE), Kothamangalam, with a strong interest in software development, AI-powered applications, and innovative tech solutions. I completed my Bachelor of Computer Applications (BCA) from St. Joseph&apos;s College, Devagiri, where I built a solid foundation in programming and software development.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '💻 நான் ஒரு ஆர்வமுள்ள டெவலப்பர், ஆர்வமுள்ள தன்னார்வலர் மற்றும் பொது பேச்சாளர், மேலும் புதிய வாய்ப்புகள் மற்றும் வழிகளை ஆராய்வதில் நான் ஆர்வமாக இருக்கிறேன்.' : '💻 I am also an avid developer, enthusiastic volunteer, and public speaker, and I love exploring new opportunities and avenues.'}
+              💻 I enjoy transforming ideas into practical digital solutions. My technical interests include Flutter app development, web development, artificial intelligence, and UI/UX design. I have completed certification courses in Flutter, Python Django, and UI/UX designing, which have helped me build projects that focus on both functionality and user experience.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🎮 ஒரு சுய கற்றல் டெவலப்பராக, என் திறன்களை மேம்படுத்த மற்றும் என் யோசனைகளை உயிர்ப்பிக்க புதிய நுட்பங்களை கற்றுக்கொள்வதில் நான் எண்ணற்ற மணிநேரங்களை செலவிட்டுள்ளேன்.' : '🎮 As a self-taught developer, I have spent countless hours sharpening my skills and learning new techniques to bring my ideas to life.'}
+              🚀 One of my key projects is “Xplora”, a Kerala Tourism chatbot that uses deep learning and natural language processing to provide travel recommendations and assist users interactively. I have also participated in hackathons and tech events, working collaboratively to build creative solutions under time constraints.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🎉 பள்ளி மற்றும் கல்லூரியில் இரண்டாம் ஆண்டு வரை 100% வருகையாளராக இருப்பதில் நான் பெருமைப்படுகிறேன். நான் என் கல்வியை மிகவும் முக்கியமாக எடுத்துக்கொள்கிறேன் மற்றும் புதிய தலைப்புகளை கற்றுக்கொள்வதில் நான் விரும்புகிறேன், குறிப்பாக அணு தொழில்நுட்பம் 💥.' : '🎉 I am proud to be a 100% attendance holder in both school and college, till 2nd year. I take my education seriously and love learning about new topics, especially when it comes to nuclear technology 💥.'}
+              ✨ Beyond academics, I served as an IEDC Core Member (2023–2024), where I actively engaged in innovation-driven activities and tech events. I enjoy exploring emerging technologies, building experimental projects, and continuously improving my development skills.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🧩 என் நேரத்தில், புதிர்கள் மற்றும் மூளைக்கவசங்களை தீர்க்க நான் விரும்புகிறேன், இது எனக்கு கூர்மையாகவும் என் பிரச்சினை தீர்க்கும் திறன்களை சரியாக வைத்திருக்கவும் உதவுகிறது. உலகம் முழுவதும் புராணங்கள் மற்றும் புராணங்களை கற்றுக்கொள்வதில் நான் பெரிய ரசிகன், இது எனக்கு பல்வேறு கலாச்சாரங்கள் மற்றும் பாரம்பரியங்களைப் பற்றிய ஒரு பார்வையை அளிக்கிறது 🌍.' : '🧩 In my free time, I love to solve puzzles and brain teasers, which helps me stay sharp and keep my problem-solving skills on point. I am also a big fan of learning myths and legends from around the world 🌍, which gives me a glimpse into different cultures and traditions.'}
-            </p>
-            <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🙌 என் தனிப்பட்ட முயற்சிகளைத் தவிர, என் சமூகத்தில் நேர்மறையான தாக்கத்தை ஏற்படுத்த நான் உறுதியாக இருக்கிறேன். உள்ளூர் அமைப்புகளுடன் தன்னார்வலராக இருப்பதில் நான் விரும்புகிறேன் மற்றும் பின்தங்கிய குழந்தைகளுக்கு கல்வி வளங்களை வழங்குகிறேன் 📚 . சில நேரம் மற்றும் முயற்சிகள் ஒருவரின் வாழ்க்கையில் ஏற்படுத்தும் தாக்கத்தை காண்பது அற்புதமானது.' : '🙌 Beyond my personal pursuits, I am committed to making a positive impact in my community. I love volunteering with local organizations and provide educational resources to underprivileged kids 📚 . Its amazing to see the impact that even a small amount of time and effort can have on someones life.'}
-            </p>
-            <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '💪 எனவே நீங்கள் கடினமாக உழைக்கும், உண்மையான மற்றும் நல்ல சவாலுக்கு எப்போதும் தயாராக இருக்கும் ஒருவரைத் தேடுகிறீர்கள் என்றால், உண்மையானவர்களைத் தவிர வேறு எதையும் பார்க்க வேண்டாம்! நாம் இணைந்து எப்படி மாற்றத்தை ஏற்படுத்த முடியும் என்று பார்க்கலாம் 🤝.' : '💪 So if you are looking for someone who is hardworking, authentic and always up for a good challenge, look no further than yours truly! Lets connect and see how we can make a difference together 🤝.'}
+              🎯 My goal is to become a skilled software developer who creates impactful and intelligent applications that solve real-world problems.
             </p>
           </S.AboutDescription>
         </S.AboutContent>
