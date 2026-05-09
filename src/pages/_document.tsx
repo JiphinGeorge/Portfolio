@@ -15,7 +15,6 @@ const meta = {
   image:
     '/ogimage.png'
 }
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
 		const sheet = new ServerStyleSheet();
@@ -26,7 +25,6 @@ export default class MyDocument extends Document {
 				originalRenderPage({
 					enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
 				});
-
 			const initialProps = await Document.getInitialProps(ctx);
 			return {
 				...initialProps,
@@ -36,7 +34,6 @@ export default class MyDocument extends Document {
 			sheet.seal();
 		}
 	}
-
   render() {
     return (
       <Html lang="en">
@@ -75,13 +72,11 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-          />
-          
+          />  
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
-
           <meta property="og:url" content="https://jiphingeorge.vercel.app/" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Jiphin George" />
