@@ -43,7 +43,7 @@ export default function Resume() {
         <PageSection>
           <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
             <Image
-              src="/jiphin.jpg"
+              src="/cv.png"
               alt="Jiphin George Resume"
               width={740}
               height={1047}
