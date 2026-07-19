@@ -48,14 +48,18 @@ export function Education() {
                   }}
                   date={education.level}
                   icon={
-                    <Image
-                      style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
-                      width={60}
-                      height={60}
-                      src={education.logo}
-                      alt={education.title}
-                      loading="lazy"
-                    />
+                    education.logo && education.logo !== '#' && education.logo !== '' ? (
+                      <Image
+                        style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
+                        width={60}
+                        height={60}
+                        src={education.logo}
+                        alt={education.title}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <Student size={32} color={theme.backgroundAlt} />
+                    )
                   }
                   iconStyle={{
                     boxShadow: `0px 0px 0px 3px ${theme.firstColor}`,

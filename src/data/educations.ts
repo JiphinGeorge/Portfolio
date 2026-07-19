@@ -7,7 +7,7 @@ const educations = [
     level: 'June 2024',
     link: '/Flutter and Dart Certified Developer Program.pdf',
     description: 'Acquired foundational skills in mobile application development using Flutter and Dart, focusing on building responsive and beautiful cross-platform apps.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const educations = [
     level: 'August 2024',
     link: '/Figma UIUX Mastery.pdf',
     description: 'Studied the principles of user interface and user experience design, wireframing, and prototyping to create user-centric digital products.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const educations = [
     level: 'August 2024',
     link: '/Python Programming with Django.pdf',
     description: 'Deepened my knowledge in Python development, understanding core backend architecture and logic implementation for robust applications.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const educations = [
     level: '2025 - 2027',
     link: '#',
     description: 'Pursuing Post Graduate degree in Computer Applications with a focus on advanced software engineering, AI, and Machine Learning.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const educations = [
     level: '2022 - 2025',
     link: '#',
     description: 'Graduated with a Bachelor\'s degree in Computer Applications, building a strong foundation in programming and computer systems.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const educations = [
     level: '2020 - 2022',
     link: '#',
     description: 'Completed Higher Secondary Education in Science stream, establishing strong mathematical and analytical skills.',
-    logo: '/education/Vec.png',
+    logo: '',
   }
 ];
 

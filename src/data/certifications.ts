@@ -7,7 +7,7 @@ const certifications = [
     level: '2023',
     link: '/Certificate for Jiphin George  for _Anti-Drug Campaign_.pdf',
     description: 'Participated in the Anti-Drug Campaign organizing committee.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const certifications = [
     level: '2024',
     link: '/Two day Workshop PYBOT.pdf',
     description: 'Attended a comprehensive two-day workshop on Python and Robotics (PYBOT).',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const certifications = [
     level: '2023',
     link: '/IEDC summit 2023.pdf',
     description: 'Participated in the IEDC Summit 2023 showcasing innovation and entrepreneurship.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const certifications = [
     level: '2022',
     link: '/Industrial Training certificate.pdf',
     description: 'Successfully completed industrial training requirements.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const certifications = [
     level: '2025',
     link: '/participation in EXPECTATIONS’25.pdf',
     description: 'Participated in EXPECTATIONS’25 events and activities.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const certifications = [
     level: '2024',
     link: '/Flutter Zero to Hero.pdf',
     description: 'Completed the Flutter Zero to Hero course, mastering building cross-platform apps.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const certifications = [
     level: '2024',
     link: '/Completion Certificate (1).pdf',
     description: 'Participated in a Python workshop and completed all requirements.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const certifications = [
     level: '2024',
     link: '/Letter of Recommendation.pdf',
     description: 'Letter of recommendation received for performance and skills.',
-    logo: '/education/Vec.png',
+    logo: '',
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const certifications = [
     level: '2024',
     link: '/NPTEL_HCI.pdf',
     description: 'Achieved Elite certification in Human Computer Interaction from IIT Madras via NPTEL.',
-    logo: '/education/Vec.png',
+    logo: '',
   }
 ];
 

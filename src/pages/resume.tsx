@@ -6,22 +6,10 @@ import { CV } from '../components/CV'
 import { Description, Section, Title } from '../styles/styles'
 import { PageSection } from '../styles/resume'
 import { BsFileText } from 'react-icons/bs'
-import axios from 'axios'
 import { useRouter } from 'next/router'
-
-const canva = process.env.NEXT_PUBLIC_CANVA_URL;
+import Image from 'next/image'
 
 export default function Resume() {
-  const resumeData = { canva }
-  
-  let previewData = '';
-  if (resumeData.canva) {
-    previewData = `${resumeData.canva.substr(
-      0,
-      resumeData.canva.lastIndexOf('/') + 1
-    )}view?embed`;
-  }
-
   const router = useRouter();
 
   return (
@@ -49,17 +37,20 @@ export default function Resume() {
           </span>
         </Title>
         <Description style={{width:'100%', textAlign: 'center', marginBottom: '1px'}}>
-          This is my updated resume, powered by Canva website. You can download my professional resume by clicking on the download button below.
+          This is my updated resume. You can download my professional resume by clicking on the download button below.
         </Description>
 
         <PageSection>
-          <iframe
-            src={previewData}
-            allowFullScreen
-            width="740"
-            height="780"
-            title="Jiphin George Resume"
-          />
+          <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
+            <Image
+              src="/jiphin.jpg"
+              alt="Jiphin George Resume"
+              width={740}
+              height={1047}
+              style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}
+              priority
+            />
+          </div>
 
           <CV />
         </PageSection>

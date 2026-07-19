@@ -39,14 +39,18 @@ export function Certifications() {
                   }}
                   date={certification.level}
                   icon={
-                    <Image
-                      style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
-                      width={60}
-                      height={60}
-                      src={certification.logo}
-                      alt={certification.title}
-                      loading="lazy"
-                    />
+                    certification.logo && certification.logo !== '#' && certification.logo !== '' ? (
+                      <Image
+                        style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
+                        width={60}
+                        height={60}
+                        src={certification.logo}
+                        alt={certification.title}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <Medal size={32} color={theme.backgroundAlt} />
+                    )
                   }
                   iconStyle={{
                     boxShadow: `0px 0px 0px 3px ${theme.firstColor}`,
