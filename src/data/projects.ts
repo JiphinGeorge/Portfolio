@@ -263,6 +263,162 @@ const projects = [
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
+  },
+  {
+    id: 6,
+    url: 'minicrm',
+    banner: '/projects/Background.png',
+    img: '/projects/Background.png',
+    title: 'MiniCRM',
+    type: 'Website',
+    icon: '/Logo1.png',
+    github: 'https://github.com/JiphinGeorge/MiniCRM',
+    blog: '#',
+    web: '#',
+    description: 'A glassmorphic customer-relationship manager featuring user authentication, protected routes, and customer CRUD operations.',
+    tags: [
+      {name: 'Personal Projects'},
+      {name: 'Web App'},
+    ],
+    tech: [
+      {
+        name: 'React',
+        icon: '/icons/JS.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Node.js',
+        icon: '/icons/JS.png',
+        color: '#339933',
+        rgb: '51, 153, 51'
+      },
+      {
+        name: 'MySQL',
+        icon: '/icons/sql.svg',
+        color: '#4479A1',
+        rgb: '68, 121, 161'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '#',
+    backgroundImage: '/projects/Background.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 7,
+    url: 'jy-notz',
+    banner: '/projects/Jy-notz.png',
+    img: '/projects/Jy-notz.png',
+    title: 'Data Science & ML Notebooks (Jy-notz)',
+    type: 'Data Science / Analytics',
+    icon: '/Logo1.png',
+    github: 'https://github.com/JiphinGeorge/Jy-notz',
+    blog: '#',
+    web: '#',
+    description: 'A collection of Jupyter notebooks exploring various datasets (Titanic, Iris, Student Performance) with data visualizations and predictive models.',
+    tags: [
+      {name: 'Data Science'},
+      {name: 'Machine Learning'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Data Science',
+        icon: '/icons/python.png',
+        color: '#FF6F00',
+        rgb: '255, 111, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '#',
+    backgroundImage: '/projects/Background.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 8,
+    url: 'flask-miniproject',
+    banner: '/projects/Flask_MiniProject.png',
+    img: '/projects/Flask_MiniProject.png',
+    title: 'Python Flask MiniProject',
+    type: 'Website',
+    icon: '/Logo1.png',
+    github: 'https://github.com/JiphinGeorge/Flask_MiniProject',
+    blog: '#',
+    web: '#',
+    description: 'A Python Flask micro-project featuring automated report generation and charting.',
+    tags: [
+      {name: 'Personal Projects'},
+      {name: 'Web App'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Flask',
+        icon: '/icons/python.png',
+        color: '#000000',
+        rgb: '0, 0, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2023',
+    gif: '#',
+    backgroundImage: '/projects/Background.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
   }
 ];
 
