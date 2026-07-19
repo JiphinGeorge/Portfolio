@@ -42,21 +42,27 @@ export default function Projeto({ project }: ProjectProps) {
           </div>
 
           <div className="link">
-            <Link href={project.web} target="_blank">
-              <ButtonAlt>
-                Website <BsGlobe size={15} />
-              </ButtonAlt>
-            </Link>
-            <Link href={project.github} target="_blank">
-              <ButtonAlt>
-                Repository <FaGithub size={17} />
-              </ButtonAlt>
-            </Link>
-            <Link href={project.blog}>
-              <ButtonAlt>
-                Blog <FaBlog size={17} />
-              </ButtonAlt>
-            </Link>
+            {project.web !== '#' && (
+              <Link href={project.web} target="_blank">
+                <ButtonAlt>
+                  Website <BsGlobe size={15} />
+                </ButtonAlt>
+              </Link>
+            )}
+            {project.github !== '#' && (
+              <Link href={project.github} target="_blank">
+                <ButtonAlt>
+                  Repository <FaGithub size={17} />
+                </ButtonAlt>
+              </Link>
+            )}
+            {project.blog !== '#' && (
+              <Link href={project.blog} target="_blank">
+                <ButtonAlt>
+                  Blog <FaBlog size={17} />
+                </ButtonAlt>
+              </Link>
+            )}
           </div>
         </div>
       </S.Banner>
