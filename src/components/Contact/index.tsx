@@ -2,13 +2,12 @@
 import Link from 'next/link'
 import { Form } from './Form'
 import { Description, Section, Title } from '../../styles/styles'
-import { ContainerContact, ContactContent, ResponsiveIframeContainer } from './styles'
+import { ContainerContact, ContactContent } from './styles'
 import { BsWhatsapp } from 'react-icons/bs'
 import { Envelope, TelegramLogo, LinkedinLogo } from 'phosphor-react'
 import React from 'react'
 
-const calendy = process.env.NEXT_PUBLIC_CALENDLY_URL;
-const calender = process.env.NEXT_PUBLIC_PORTFOLIO_CALENDER_URL;
+
 
 export function Contact() {
 
@@ -47,35 +46,6 @@ export function Contact() {
           </div>
         </ContactContent>
         <Form />
-        <Title style={{ textAlign: "center" }}>
-          Schedule a Meeting
-        </Title>
-        <Description style={{ textAlign: "center", marginTop: "3px" }}>
-          This is powered by Calendy. Hence, it may take some time for loading. (Note: You have to accept the cookies by Calendy in order to Schedule a meet)
-        </Description>
-        <ResponsiveIframeContainer>
-          <iframe
-            src={calendy}
-            width="100%"
-            height="800px"
-            frameBorder="0"
-            title="Calendly"
-          ></iframe>
-        </ResponsiveIframeContainer>
-        <Title style={{ textAlign: "center" }}>
-          See my Calendar
-        </Title>
-        <ResponsiveIframeContainer>
-        <iframe
-          src={calender}
-          style={{ border: 0 }}
-          width="800"
-          height="600"
-          frameBorder="0"
-          scrolling="no"
-          title="Google Calendar"
-        ></iframe>
-        </ResponsiveIframeContainer>
       </ContainerContact>
     </Section>
   );
