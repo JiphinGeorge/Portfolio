@@ -52,7 +52,7 @@ export default function About() {
           <S.AboutImage>
             <Image
               className="AboutImg"
-              src="/jiphin.jpg"
+              src="https://github.com/JiphinGeorge.png"
               alt="Jiphin George"
               width={400}
               height={400}
