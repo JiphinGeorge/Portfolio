@@ -157,71 +157,75 @@ export default function Projeto({ project }: ProjectProps) {
         </S.PrintContent>
       </S.PrintContainer>
 
-      <S.Trelloboard>
-        <S.DescriptionProject>
-          <Title>
-            Project Board
-            <span>
-              <FaTrello /> Trello
-            </span>
-          </Title>
-          <div className="description">
-            <p style={{ textAlign: "justify" }}> The Trello Board is integrated into this project section to provide a transparent view of the project's status and progress. If you have any suggestions or features you'd like to see added, please feel free to suggest for Trello board using the button below.
-              <br /> <br /> <strong>Note:</strong> The Trello board is updated occasionally and may not reflect the current status of the project.
-            </p>
+      {project.trelloboard !== '#' && (
+        <S.Trelloboard>
+          <S.DescriptionProject>
+            <Title>
+              Project Board
+              <span>
+                <FaTrello /> Trello
+              </span>
+            </Title>
+            <div className="description">
+              <p style={{ textAlign: "justify" }}> The Trello Board is integrated into this project section to provide a transparent view of the project's status and progress. If you have any suggestions or features you'd like to see added, please feel free to suggest for Trello board using the button below.
+                <br /> <br /> <strong>Note:</strong> The Trello board is updated occasionally and may not reflect the current status of the project.
+              </p>
+            </div>
+          </S.DescriptionProject>
+          <div className="trello-board">
+            <iframe
+              src={project.trelloboard}
+              width="100%"
+              height="600"
+              placeholder='Trello Board'
+              frameBorder="100"
+              title="Trello Board"
+            ></iframe>
           </div>
-        </S.DescriptionProject>
-        <div className="trello-board">
-          <iframe
-            src={project.trelloboard}
-            width="100%"
-            height="600"
-            placeholder='Trello Board'
-            frameBorder="100"
-            title="Trello Board"
-          ></iframe>
-        </div>
 
-        <div className="edit-trello-board">
-          <a
-            href={project.trelloedit}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="edit-link"
-          >
-            Suggest for Trello Board
-          </a>
-        </div>
-      </S.Trelloboard>
+          <div className="edit-trello-board">
+            <a
+              href={project.trelloedit}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="edit-link"
+            >
+              Suggest for Trello Board
+            </a>
+          </div>
+        </S.Trelloboard>
+      )}
 
-      <S.ContainerVideo>
-        <div className="imageVideo">
-          <Image src={project.backgroundImage} alt={project.title} width={4000} height={4000} />
-        </div>
-        <Title className="title-video">
-          Video
-          <span>
-            <YoutubeLogo /> Project
-          </span>
-          <Image
-            className="vector"
-            src="/vectors/youtube.svg"
-            alt="logo do YouTube"
-            width={50}
-            height={50}
-          />
-        </Title>
-        <S.Video>
-          <ReactPlayer
-            url={project.video}
-            width="100%"
-            height="100%"
-            controls={true}
-            pip
-            config={{ file: { forceHLS: true } }}
-          />
-        </S.Video>
-      </S.ContainerVideo>
+      {project.video !== '#' && (
+        <S.ContainerVideo>
+          <div className="imageVideo">
+            <Image src={project.backgroundImage} alt={project.title} width={4000} height={4000} />
+          </div>
+          <Title className="title-video">
+            Video
+            <span>
+              <YoutubeLogo /> Project
+            </span>
+            <Image
+              className="vector"
+              src="/vectors/youtube.svg"
+              alt="logo do YouTube"
+              width={50}
+              height={50}
+            />
+          </Title>
+          <S.Video>
+            <ReactPlayer
+              url={project.video}
+              width="100%"
+              height="100%"
+              controls={true}
+              pip
+              config={{ file: { forceHLS: true } }}
+            />
+          </S.Video>
+        </S.ContainerVideo>
+      )}
 
       <S.DescriptionProject>
       <Title>
