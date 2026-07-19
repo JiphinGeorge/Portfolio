@@ -7,7 +7,7 @@ const educations = [
     level: 'June 2024',
     link: '/Flutter and Dart Certified Developer Program.pdf',
     description: 'Acquired foundational skills in mobile application development using Flutter and Dart, focusing on building responsive and beautiful cross-platform apps.',
-    logo: '/certi/coursera_logo.jpeg',
+    logo: '/education/Vec.png',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const educations = [
     level: 'August 2024',
     link: '/Figma UIUX Mastery.pdf',
     description: 'Studied the principles of user interface and user experience design, wireframing, and prototyping to create user-centric digital products.',
-    logo: '/certi/microsoft_logo.jpeg',
+    logo: '/education/Vec.png',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const educations = [
     level: 'August 2024',
     link: '/Python Programming with Django.pdf',
     description: 'Deepened my knowledge in Python development, understanding core backend architecture and logic implementation for robust applications.',
-    logo: '/certi/microsoft_logo.jpeg',
+    logo: '/education/Vec.png',
   },
   {
     id: 4,

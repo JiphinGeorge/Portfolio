@@ -57,7 +57,7 @@ const certifications = [
     level: '2024',
     link: '/Flutter Zero to Hero.pdf',
     description: 'Completed the Flutter Zero to Hero course, mastering building cross-platform apps.',
-    logo: '/certi/coursera_logo.jpeg',
+    logo: '/education/Vec.png',
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const certifications = [
     level: '2024',
     link: '/Completion Certificate (1).pdf',
     description: 'Participated in a Python workshop and completed all requirements.',
-    logo: '/certi/coursera_logo.jpeg',
+    logo: '/education/Vec.png',
   },
   {
     id: 8,

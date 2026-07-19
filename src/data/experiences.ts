@@ -8,7 +8,7 @@ const experience = [
     description: 'Developed QualiVision AI using Computer Vision and Deep Learning. Built image classification models with TensorFlow and EfficientNetV2B0. Integrated Grad-CAM visualizations.',
     tags: [
       { name: 'Python', icon: '/icons/python.png' },
-      { name: 'Machine Learning', icon: '/icons/sql.png' },
+      { name: 'Machine Learning', icon: '/icons/sql.svg' },
       { name: 'TensorFlow', icon: '/icons/python.png' },
     ],
     date: 'May 2026 - Jul 2026',
@@ -25,8 +25,8 @@ const experience = [
     description: 'Completed a virtual internship focused on Data Science concepts, gaining exposure to data analysis workflows, ML fundamentals, and problem-solving.',
     tags: [
       { name: 'Python', icon: '/icons/python.png' },
-      { name: 'Data Science', icon: '/icons/sql.png' },
-      { name: 'Machine Learning', icon: '/icons/sql.png' },
+      { name: 'Data Science', icon: '/icons/sql.svg' },
+      { name: 'Machine Learning', icon: '/icons/sql.svg' },
     ],
     date: 'Sep 2025 - Nov 2025',
     link: '#',
