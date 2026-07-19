@@ -88,6 +88,36 @@ const certifications = [
     link: '/NPTEL_HCI.pdf',
     description: 'Achieved Elite certification in Human Computer Interaction from IIT Madras via NPTEL.',
     logo: '',
+  },
+  {
+    id: 10,
+    title: 'Figma UI/UX Mastery',
+    subTitle: 'Completion Certificate',
+    status: 'Completed',
+    level: '2024',
+    link: '/Figma UIUX Mastery.pdf',
+    description: 'Studied the principles of user interface and user experience design, wireframing, and prototyping to create user-centric digital products.',
+    logo: '',
+  },
+  {
+    id: 11,
+    title: 'Flutter and Dart Developer',
+    subTitle: 'Completion Certificate',
+    status: 'Completed',
+    level: '2024',
+    link: '/Flutter and Dart Certified Developer Program.pdf',
+    description: 'Acquired foundational skills in mobile application development using Flutter and Dart, focusing on building responsive and beautiful cross-platform apps.',
+    logo: '',
+  },
+  {
+    id: 12,
+    title: 'Python Programming with Django',
+    subTitle: 'Completion Certificate',
+    status: 'Completed',
+    level: '2024',
+    link: '/Python Programming with Django.pdf',
+    description: 'Deepened my knowledge in Python development, understanding core backend architecture and logic implementation for robust applications.',
+    logo: '',
   }
 ];
 

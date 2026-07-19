@@ -71,11 +71,13 @@ export function Certifications() {
                         </span>
                       ))}</p>
                       <div style={{ display: 'flex', gap:"1rem", marginTop:"1rem" }}>
-                        <Button>
-                          <Link legacyBehavior href={certification.link}>
-                            <a target="_blank">View</a>
-                          </Link>
-                        </Button>
+                        {certification.link && certification.link !== '#' && (
+                          <Button>
+                            <Link legacyBehavior href={certification.link}>
+                              <a target="_blank">View</a>
+                            </Link>
+                          </Button>
+                        )}
                       </div>
                     </CertificationsContent>
                   </CertificationsContainer>

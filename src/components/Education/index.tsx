@@ -80,12 +80,13 @@ export function Education() {
                         </a>
                       ))}</p>
                       <div style={{ display: 'flex', gap:"1rem", marginTop:"1rem" }}>
-                        <Button>
-                          <Link legacyBehavior href={education.link}>
-                            <a target="_blank">Website</a>
-                          </Link>
-                        </Button>
-
+                        {education.link && education.link !== '#' && (
+                          <Button>
+                            <Link legacyBehavior href={education.link}>
+                              <a target="_blank">Website</a>
+                            </Link>
+                          </Button>
+                        )}
                       </div>
                     </EducationContent>
                   </EducationContainer>

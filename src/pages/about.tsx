@@ -76,7 +76,7 @@ export default function About() {
                   <BsLinkedin size={25} />Linkedin
                 </Link>
                 <Link
-                  href={'#'}
+                  href={'https://wa.me/919526111190'}
                   target="_blank"
                   aria-label="WhatsApp">
 

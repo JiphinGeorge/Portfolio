@@ -101,7 +101,7 @@ export function Header() {
             <FiInstagram />
           </Link>
           <Link
-            href={'#'}
+            href={'https://wa.me/919526111190'}
             target="_blank"
             aria-label="Link to contact via WhatsApp">
             <FaWhatsapp />

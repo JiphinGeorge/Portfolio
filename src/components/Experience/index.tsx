@@ -44,14 +44,18 @@ export function Experience() {
                   }}
                   date={exp.date}
                   icon={
-                    <Image
-                      style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
-                      width={60}
-                      height={60}
-                      src={exp.img}
-                      alt={exp.title} 
-                      loading="lazy"
-                    />
+                    exp.img && exp.img !== '#' && !exp.img.includes('NIWE.png') ? (
+                      <Image
+                        style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '60%' }}
+                        width={60}
+                        height={60}
+                        src={exp.img}
+                        alt={exp.title} 
+                        loading="lazy"
+                      />
+                    ) : (
+                      <Books size={32} color={theme.backgroundAlt} />
+                    )
                   }
                   iconStyle={{
                     boxShadow: `0px 0px 0px 3px ${theme.firstColor}`,
@@ -72,16 +76,20 @@ export function Experience() {
                         </span>
                       )) : 'Description not available'}</p>
                       <div style={{ display: 'flex', gap: "1rem", marginTop: "1rem", marginBottom: "1rem" }}>
-                        <Button>
-                          <Link legacyBehavior href={exp.certificate ?? ''}>
-                            <a target="_blank">Certificate</a>
-                          </Link>
-                        </Button>
-                        <Button>
-                          <Link legacyBehavior href={exp.link2 ?? ''}>
-                            <a target="_blank">Website</a>
-                          </Link>
-                        </Button>
+                        {exp.certificate && exp.certificate !== '#' && (
+                          <Button>
+                            <Link legacyBehavior href={exp.certificate}>
+                              <a target="_blank">Certificate</a>
+                            </Link>
+                          </Button>
+                        )}
+                        {exp.link2 && exp.link2 !== '#' && (
+                          <Button>
+                            <Link legacyBehavior href={exp.link2}>
+                              <a target="_blank">Website</a>
+                            </Link>
+                          </Button>
+                        )}
                       </div>
                       <div>
                         <h3>Techs:</h3>
