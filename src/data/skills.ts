@@ -13,6 +13,10 @@ const cardSkills = [
   { id: 12, title: 'Android Studio', img: '/icons/android_studio.svg', color: '#3DDC84' },
   { id: 13, title: 'VS Code', img: '/icons/vscode.svg', color: '#007ACC' },
   { id: 14, title: 'Figma', img: '/icons/Figma.png', color: '#F24E1E' },
+  { id: 15, title: 'TensorFlow', img: '/icons/python.png', color: '#FF6F00' },
+  { id: 16, title: 'MongoDB', img: '/icons/sql.svg', color: '#47A248' },
+  { id: 17, title: 'OpenCV', img: '/icons/python.png', color: '#5C3EE8' },
+  { id: 18, title: 'Scikit-Learn', img: '/icons/python.png', color: '#F7931E' }
 ];
 
 export default cardSkills;

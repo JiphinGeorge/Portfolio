@@ -78,6 +78,16 @@ const certifications = [
     link: '/Letter of Recommendation.pdf',
     description: 'Letter of recommendation received for performance and skills.',
     logo: '/education/Vec.png',
+  },
+  {
+    id: 9,
+    title: 'NPTEL Elite Certification',
+    subTitle: 'Human Computer Interaction (90%) - IIT Madras',
+    status: 'Completed',
+    level: '2024',
+    link: '/NPTEL_HCI.pdf',
+    description: 'Achieved Elite certification in Human Computer Interaction from IIT Madras via NPTEL.',
+    logo: '/education/Vec.png',
   }
 ];
 

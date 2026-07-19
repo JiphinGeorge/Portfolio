@@ -13,6 +13,7 @@ const projects = [
     description: 'An AI-powered chatbot designed to assist users with interactive queries, utilizing modern AI APIs and a dynamic user interface.',
     tags: [
       {name: 'Personal Projects'},
+      {name: 'AI / Machine Learning'},
     ],
     tech: [
       {
@@ -28,10 +29,16 @@ const projects = [
         rgb: '56, 189, 248'
       },
       {
-        name: 'HTML/CSS/JS',
-        icon: '/icons/HTML.png',
-        color: '#38BDF8',
-        rgb: '56, 189, 248'
+        name: 'TensorFlow',
+        icon: '/icons/python.png',
+        color: '#FF6F00',
+        rgb: '255, 111, 0'
+      },
+      {
+        name: 'Keras',
+        icon: '/icons/python.png',
+        color: '#D00000',
+        rgb: '208, 0, 0'
       },
     ],
     print: [],
@@ -120,8 +127,14 @@ const projects = [
         rgb: '56, 189, 248'
       },
       {
-        name: 'Dart',
+        name: 'Provider',
         icon: '/icons/dart.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'SQLite',
+        icon: '/icons/sql.png',
         color: '#38BDF8',
         rgb: '56, 189, 248'
       },
@@ -141,6 +154,111 @@ const projects = [
     status: 'In Progress',
     year: '2024',
     gif: '/projects/Portfolio/Cool.mp4',
+    backgroundImage: '/projects/Background.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 4,
+    url: 'qualivision',
+    banner: '/projects/QualiVision.jpg',
+    img: '/projects/QualiVision.jpg',
+    title: 'QualiVision AI',
+    type: 'AI / Machine Learning',
+    icon: '/Logo1.png',
+    github: 'https://github.com/JiphinGeorge/QualiVision-AI---Industrial-Quality-Control-System',
+    blog: '#',
+    web: '#',
+    description: 'An AI-powered industrial quality inspection system for real-time tomato freshness classification using Computer Vision and Transfer Learning.',
+    tags: [
+      {name: 'AI / Machine Learning'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'TensorFlow',
+        icon: '/icons/python.png',
+        color: '#FF6F00',
+        rgb: '255, 111, 0'
+      },
+      {
+        name: 'Flask',
+        icon: '/icons/python.png',
+        color: '#000000',
+        rgb: '0, 0, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '#',
+    backgroundImage: '/projects/Background.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 5,
+    url: 'readify-ai',
+    banner: '/projects/Readify.png',
+    img: '/projects/Readify.png',
+    title: 'Readify AI',
+    type: 'Website',
+    icon: '/Logo1.png',
+    github: 'https://github.com/JiphinGeorge/Readify-AI',
+    blog: '#',
+    web: '#',
+    description: 'A Flask-based web application that converts PDF documents into audiobooks using text extraction and AI-powered text-to-speech.',
+    tags: [
+      {name: 'Personal Projects'},
+      {name: 'AI / Machine Learning'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Flask',
+        icon: '/icons/python.png',
+        color: '#000000',
+        rgb: '0, 0, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '#',
     backgroundImage: '/projects/Background.png',
     trelloboard: '#',
     trelloedit: '#',
