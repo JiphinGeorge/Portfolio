@@ -255,23 +255,23 @@ export default function Projeto({ project }: ProjectProps) {
                 <h3>{team.name}</h3>
                 <p>{team.role}</p>
                 <div className="social-links">
-                  {team.github && (
+                  {team.github && team.github !== '#' && (
                     <a href={team.github} target="_blank" rel="noopener noreferrer">
                       <FaGithub size={20} />
                     </a>
                   )}
-                  {team.linkedin && (
+                  {team.linkedin && team.linkedin !== '#' && (
                     <a href={team.linkedin} target="_blank" rel="noopener noreferrer">
                       <FaLinkedin size={20} />
                     </a>
                   )}
 
-                  {team.instagram && (
+                  {team.instagram && team.instagram !== '#' && (
                     <a href={team.instagram} target="_blank" rel="noopener noreferrer">
                       <FaInstagram size={20} />
                     </a>
                   )}
-                  {team.email && (
+                  {team.email && team.email !== '#' && (
                     <a href={`mailto:${team.email}`} target="_blank" rel="noopener noreferrer">
                       <FaGoogle size={20} />
                     </a>
