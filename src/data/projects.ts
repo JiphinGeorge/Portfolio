@@ -18,7 +18,7 @@ const projects = [
     tech: [
       {
         name: 'Django',
-        icon: '/icons/django.png',
+        icon: '/icons/python.png',
         color: '#FFFFFF',
         rgb: '255, 255, 255'
       },
@@ -122,13 +122,13 @@ const projects = [
     tech: [
       {
         name: 'Flutter',
-        icon: '/icons/flutter.png',
+        icon: '/icons/flutter.svg',
         color: '#38BDF8',
         rgb: '56, 189, 248'
       },
       {
         name: 'Provider',
-        icon: '/icons/dart.png',
+        icon: '/icons/dart.svg',
         color: '#38BDF8',
         rgb: '56, 189, 248'
       },
