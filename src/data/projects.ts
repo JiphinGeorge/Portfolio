@@ -169,7 +169,7 @@ const projects = [
     icon: '/Logo1.png',
     github: 'https://github.com/JiphinGeorge/QualiVision-AI---Industrial-Quality-Control-System',
     blog: '#',
-    web: '/projects/QualiVision/QualiVision_AI_Project_Report.pdf',
+    web: '#',
     description: 'An AI-powered industrial quality inspection system for real-time tomato freshness classification using Computer Vision and Transfer Learning.',
     tags: [
       {name: 'AI / Machine Learning'},
