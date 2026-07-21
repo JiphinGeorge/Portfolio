@@ -31,7 +31,6 @@ export function CV() {
           </CVDescription>
           
           <Curriculum>
-            <Image src="/cv.png" alt="Resume" width={300} height={400} />
             <a href="/pdf/Jiphin_George_Resume.pdf" download="Jiphin_George_Resume.pdf">
               <ButtonSecondAlt>
                 <b>Download CV</b> <FiDownload size={20}  />
