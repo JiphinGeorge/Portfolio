@@ -88,7 +88,7 @@ export default class MyDocument extends Document {
           <meta name="twitter:description" content={meta.description} />
           <meta name="twitter:image" content={meta.image} />
 
-          <link rel="icon" href="/Logo1.png" />
+          <link rel="icon" href="/jg-logo.png" />
         </Head>
         <body>
           <Main />

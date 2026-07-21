@@ -27,7 +27,7 @@ export function Header() {
               className="logo"
               width={40}
               height={40}
-              src="/Logo1.png"
+              src="/jg-logo.png"
               alt="logo"
             />
           </div>

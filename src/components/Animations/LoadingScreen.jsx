@@ -63,7 +63,7 @@ export const LoadingScreen = ({ onLoadingComplete }) => {
     <LoadingContainer>
       <LoadingContent>
         <LogoContainer>
-          <AnimatedLogo><Image width={50} height={50} src="/Logo1.png" alt="Logo" /></AnimatedLogo>
+          <AnimatedLogo><Image width={50} height={50} src="/jg-logo.png" alt="Logo" /></AnimatedLogo>
           <LogoText>Welcome</LogoText>
         </LogoContainer>
         

@@ -210,7 +210,7 @@ export function HomeHero() {
                           <Image
                             width={50}
                             height={50}
-                            src="/Logo1.png"
+                            src="/jg-logo.png"
                             alt="logo"
                             loading="lazy"
                           />
