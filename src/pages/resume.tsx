@@ -41,14 +41,13 @@ export default function Resume() {
         </Description>
 
         <PageSection>
-          <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
-            <Image
-              src="/cv.png"
-              alt="Jiphin George Resume"
-              width={740}
-              height={1047}
-              style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}
-              priority
+          <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem auto', width: '100%', maxWidth: '900px', height: '1100px' }}>
+            <iframe
+              src="/pdf/Jiphin_George_Resume.pdf"
+              width="100%"
+              height="100%"
+              style={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}
+              title="Jiphin George Resume"
             />
           </div>
 
