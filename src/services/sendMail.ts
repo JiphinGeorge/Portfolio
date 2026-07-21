@@ -12,6 +12,7 @@ export const sendContactMail = async (name: string, email: string, message: stri
     await emailjs.send(service_id, template_id, templateParams, user_id)
     return true
   } catch (err) {
+    console.error('EmailJS Error:', err)
     throw err
   }
 }
