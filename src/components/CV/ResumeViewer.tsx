@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { CaretLeft, CaretRight, DownloadSimple } from 'phosphor-react';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 import {
   ViewerContainer,
   DocumentWrapper,
