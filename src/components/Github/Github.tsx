@@ -165,16 +165,18 @@ export default function Github() {
               padding: '1rem',
             }}
           >
-            <Image
-              src={user?.avatar_url || ''}
-              alt="Jiphin's Image"
-              width={150}
-              height={150}
-              style={{
-                borderRadius: '50%',
-                display: 'block',
-              }}
-            />
+            {user?.avatar_url && (
+              <Image
+                src={user.avatar_url}
+                alt="Jiphin's Image"
+                width={150}
+                height={150}
+                style={{
+                  borderRadius: '50%',
+                  display: 'block',
+                }}
+              />
+            )}
             <div className="aboutDescription">
               <Title>
                 {user?.login}
