@@ -56,7 +56,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '/projects/Portfolio/Cool.mp4',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/Picture1.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -99,7 +99,7 @@ const projects = [
     status: 'Completed',
     year: '2023',
     gif: '/projects/Portfolio/Cool.mp4',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/useless-webpages-placeholder.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -154,7 +154,7 @@ const projects = [
     status: 'In Progress',
     year: '2024',
     gif: '/projects/Portfolio/Cool.mp4',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/xynapse-placeholder.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -220,7 +220,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/QualiVision.jpg',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -270,7 +270,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/Readify.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -326,7 +326,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/minicrm-placeholder.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -376,7 +376,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/Jy-notz.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -426,7 +426,7 @@ const projects = [
     status: 'Completed',
     year: '2023',
     gif: '#',
-    backgroundImage: '/projects/Background.png',
+    backgroundImage: '/projects/Flask_MiniProject.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
