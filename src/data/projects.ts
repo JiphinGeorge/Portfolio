@@ -191,6 +191,211 @@ const projects = [
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
+  },
+  {
+    id: 8,
+    url: 'xplora-chatbot',
+    banner: '/projects/Picture1.png',
+    img: '/projects/Picture1.png',
+    title: 'Xplora AI Chatbot',
+    type: 'Website',
+    icon: '/jg-logo.png',
+    github: 'https://github.com/JiphinGeorge/Xplora--Final-yr-BCA-Project',
+    blog: '#',
+    web: '#',
+    description: 'An AI-powered chatbot designed to assist users with interactive queries, utilizing modern AI APIs and a dynamic user interface.',
+    tags: [
+      {name: 'Personal Projects'},
+      {name: 'AI / Machine Learning'},
+    ],
+    tech: [
+      {
+        name: 'Django',
+        icon: '/icons/python.png',
+        color: '#FFFFFF',
+        rgb: '255, 255, 255'
+      },
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'TensorFlow',
+        icon: '/icons/python.png',
+        color: '#FF6F00',
+        rgb: '255, 111, 0'
+      },
+      {
+        name: 'Keras',
+        icon: '/icons/python.png',
+        color: '#D00000',
+        rgb: '208, 0, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '/projects/Portfolio/Cool.mp4',
+    backgroundImage: '/projects/Picture1.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 9,
+    url: 'useless-webpages',
+    banner: '/projects/useless-webpages-placeholder.png',
+    img: '/projects/useless-webpages-placeholder.png',
+    title: 'Useless WebPages',
+    type: 'Website',
+    icon: '/jg-logo.png',
+    github: 'https://github.com/JiphinGeorge/OruUseless-TinkerHub_hackthon-',
+    blog: '#',
+    web: '#',
+    description: 'A collection of random, fun, and mostly useless webpages built to practice front-end animation and logic.',
+    tags: [
+      {name: 'Personal Projects'},
+    ],
+    tech: [
+      {
+        name: 'HTML/CSS/JS',
+        icon: '/icons/HTML.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2023',
+    gif: '/projects/Portfolio/Cool.mp4',
+    backgroundImage: '/projects/useless-webpages-placeholder.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 10,
+    url: 'jy-notz',
+    banner: '/projects/Jy-notz.png',
+    img: '/projects/Jy-notz.png',
+    title: 'Data Science & ML Notebooks (Jy-notz)',
+    type: 'Data Science / Analytics',
+    icon: '/jg-logo.png',
+    github: 'https://github.com/JiphinGeorge/Jy-notz',
+    blog: '#',
+    web: '#',
+    description: 'A collection of Jupyter notebooks exploring various datasets (Titanic, Iris, Student Performance) with data visualizations and predictive models.',
+    tags: [
+      {name: 'Data Science'},
+      {name: 'Machine Learning'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Data Science',
+        icon: '/icons/python.png',
+        color: '#FF6F00',
+        rgb: '255, 111, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2024',
+    gif: '#',
+    backgroundImage: '/projects/Jy-notz.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
+  },
+  {
+    id: 11,
+    url: 'flask-miniproject',
+    banner: '/projects/Flask_MiniProject.png',
+    img: '/projects/Flask_MiniProject.png',
+    title: 'Python Flask MiniProject',
+    type: 'Website',
+    icon: '/jg-logo.png',
+    github: 'https://github.com/JiphinGeorge/Flask_MiniProject',
+    blog: '#',
+    web: '#',
+    description: 'A Python Flask micro-project featuring automated report generation and charting.',
+    tags: [
+      {name: 'Personal Projects'},
+      {name: 'Web App'},
+    ],
+    tech: [
+      {
+        name: 'Python',
+        icon: '/icons/python.png',
+        color: '#38BDF8',
+        rgb: '56, 189, 248'
+      },
+      {
+        name: 'Flask',
+        icon: '/icons/python.png',
+        color: '#000000',
+        rgb: '0, 0, 0'
+      },
+    ],
+    print: [],
+    team: [
+      {
+        id: '1',
+        name: 'Jiphin George',
+        role: 'Developer',
+        img: '/projects/Teams/Jiphin.jpg',
+        github: 'https://github.com/JiphinGeorge',
+        linkedin: '#',
+        instagram: 'https://www.instagram.com/jiphin_george'
+      },
+    ],
+    status: 'Completed',
+    year: '2023',
+    gif: '#',
+    backgroundImage: '/projects/Flask_MiniProject.png',
+    trelloboard: '#',
+    trelloedit: '#',
+    video: '#'
   }
 ];
 
