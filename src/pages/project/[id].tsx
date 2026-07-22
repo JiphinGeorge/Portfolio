@@ -75,7 +75,7 @@ export default function Projeto({ project }: ProjectProps) {
           </span>
         </Title>
         <div className="description">
-          <p style={{ textAlign: "justify" }}>{project.description}</p>
+          <p style={{ textAlign: "justify", whiteSpace: "pre-wrap" }}>{project.description}</p>
         </div>
       </S.DescriptionProject>
 
