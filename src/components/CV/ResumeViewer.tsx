@@ -14,8 +14,10 @@ import {
 } from './ResumeViewerStyles';
 import { ButtonSecondAlt } from '../../styles/styles';
 
-// Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// Configure PDF.js worker safely
+if (typeof window !== 'undefined') {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+}
 
 interface ResumeViewerProps {
   pdfUrl: string;
@@ -117,3 +119,5 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
     </ViewerContainer>
   );
 }
+
+export default ResumeViewer;
