@@ -257,8 +257,8 @@ const projects = [
   {
     id: 9,
     url: 'useless-webpages',
-    banner: '/projects/useless-webpages-placeholder.png',
-    img: '/projects/useless-webpages-placeholder.png',
+    banner: '/projects/useless-webpages-cover.png',
+    img: '/projects/useless-webpages-cover.png',
     title: 'Useless WebPages',
     type: 'Website',
     icon: '/jg-logo.png',
@@ -292,7 +292,7 @@ const projects = [
     status: 'Completed',
     year: '2023',
     gif: '/projects/Portfolio/Cool.mp4',
-    backgroundImage: '/projects/useless-webpages-placeholder.png',
+    backgroundImage: '/projects/useless-webpages-cover.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
