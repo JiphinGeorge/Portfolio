@@ -1,13 +1,142 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const pulse = keyframes`
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+`;
 
 export const LabsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
   padding: 0 1rem;
 `;
+
+/* ==========================================================================
+   TIMELINE SECTION
+   ========================================================================== */
+
+export const TimelineContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+`;
+
+export const TimelineDegree = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: -2rem;
+    left: 20px;
+    width: 2px;
+    background: linear-gradient(to bottom, ${({ theme }) => theme.firstColor}80, transparent);
+    z-index: 0;
+  }
+`;
+
+export const DegreeHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1;
+
+  .node {
+    width: 42px;
+    height: 42px;
+    background: ${({ theme }) => theme.background};
+    border: 3px solid ${({ theme }) => theme.firstColor};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${({ theme }) => theme.firstColor};
+    box-shadow: 0 0 15px ${({ theme }) => theme.firstColor}50;
+    animation: ${pulse} 3s infinite;
+  }
+
+  h3 {
+    color: ${({ theme }) => theme.white};
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  span {
+    color: ${({ theme }) => theme.text};
+    font-size: 1rem;
+    font-weight: 500;
+  }
+`;
+
+export const SemesterBlock = styled.div`
+  margin-left: 50px;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid ${({ theme }) => theme.firstColor}20;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(5px);
+    border-color: ${({ theme }) => theme.firstColor}50;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 2rem;
+    width: 30px;
+    height: 2px;
+    background: ${({ theme }) => theme.firstColor}50;
+  }
+
+  h4 {
+    color: ${({ theme }) => theme.secondColor};
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    li {
+      color: ${({ theme }) => theme.text};
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      
+      svg {
+        color: ${({ theme }) => theme.firstColor};
+      }
+    }
+  }
+`;
+
+/* ==========================================================================
+   SEARCH & FILTERS
+   ========================================================================== */
 
 export const FilterContainer = styled.div`
   display: flex;
@@ -22,6 +151,39 @@ export const FilterContainer = styled.div`
   border: 1px solid ${({ theme }) => theme.firstColor}30;
   border-radius: 16px;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+`;
+
+export const SearchBar = styled.div`
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid ${({ theme }) => theme.firstColor}40;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  svg {
+    color: ${({ theme }) => theme.secondColor};
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: ${({ theme }) => theme.white};
+    width: 100%;
+    font-size: 1rem;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.text};
+    }
+  }
+
+  &:focus-within {
+    border-color: ${({ theme }) => theme.firstColor};
+    box-shadow: 0 0 10px ${({ theme }) => theme.firstColor}30;
+  }
 `;
 
 export const FilterGroup = styled.div`
@@ -39,12 +201,9 @@ export const FilterGroup = styled.div`
 `;
 
 export const FilterButton = styled.button<{ active: boolean }>`
-  background: ${({ active, theme }) => 
-    active ? theme.firstColor : 'rgba(255, 255, 255, 0.05)'};
-  color: ${({ active, theme }) => 
-    active ? theme.background : theme.text};
-  border: 1px solid ${({ active, theme }) => 
-    active ? theme.firstColor : 'rgba(255, 255, 255, 0.1)'};
+  background: ${({ active, theme }) => active ? theme.firstColor : 'rgba(255, 255, 255, 0.05)'};
+  color: ${({ active, theme }) => active ? theme.background : theme.text};
+  border: 1px solid ${({ active, theme }) => active ? theme.firstColor : 'rgba(255, 255, 255, 0.1)'};
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.85rem;
@@ -53,16 +212,19 @@ export const FilterButton = styled.button<{ active: boolean }>`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ active, theme }) => 
-      active ? theme.firstColor : 'rgba(255, 255, 255, 0.1)'};
+    background: ${({ active, theme }) => active ? theme.firstColor : 'rgba(255, 255, 255, 0.1)'};
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 `;
 
+/* ==========================================================================
+   GRID & CARDS
+   ========================================================================== */
+
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -96,23 +258,30 @@ export const Card = styled.div`
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     border-color: ${({ theme }) => theme.firstColor}50;
-
-    &::before {
-      opacity: 1;
-    }
+    &::before { opacity: 1; }
   }
 
   .header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 1rem;
+    gap: 0.8rem;
 
-    h3 {
-      color: ${({ theme }) => theme.white};
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      
+      svg {
+        color: ${({ theme }) => theme.firstColor};
+        min-width: 24px;
+      }
+      h3 {
+        color: ${({ theme }) => theme.white};
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 0;
+      }
     }
 
     .badges {
@@ -122,20 +291,10 @@ export const Card = styled.div`
     }
   }
 
-  .subject {
-    color: ${({ theme }) => theme.secondColor};
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
   .description {
     color: ${({ theme }) => theme.text};
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
   }
@@ -147,31 +306,48 @@ export const Card = styled.div`
     margin-bottom: 1.5rem;
 
     span {
-      background: rgba(255, 255, 255, 0.05);
-      color: ${({ theme }) => theme.firstColor};
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: ${({ theme }) => theme.secondColor}15;
+      color: ${({ theme }) => theme.secondColor};
+      border: 1px solid ${({ theme }) => theme.secondColor}40;
       padding: 0.3rem 0.6rem;
       border-radius: 4px;
       font-size: 0.75rem;
       font-family: monospace;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: ${({ theme }) => theme.secondColor}30;
+        box-shadow: 0 0 8px ${({ theme }) => theme.secondColor}50;
+      }
+    }
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: ${({ theme }) => theme.text};
+      font-size: 0.8rem;
+
+      svg { color: ${({ theme }) => theme.firstColor}; }
     }
   }
 
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-    .date {
-      color: ${({ theme }) => theme.text};
-      font-size: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
 
     a {
       color: ${({ theme }) => theme.firstColor};
@@ -182,20 +358,21 @@ export const Card = styled.div`
       gap: 0.5rem;
       transition: color 0.2s ease;
 
-      &:hover {
-        color: ${({ theme }) => theme.white};
-      }
+      &:hover { color: ${({ theme }) => theme.white}; }
     }
   }
 `;
 
-export const Badge = styled.span<{ variant?: 'primary' | 'secondary' }>`
+export const Badge = styled.span<{ variant?: 'primary' | 'secondary' | 'outline' }>`
   background: ${({ variant, theme }) => 
-    variant === 'primary' ? `${theme.firstColor}20` : `${theme.secondColor}20`};
+    variant === 'primary' ? `${theme.firstColor}20` : 
+    variant === 'secondary' ? `${theme.secondColor}20` : 'transparent'};
   color: ${({ variant, theme }) => 
-    variant === 'primary' ? theme.firstColor : theme.secondColor};
+    variant === 'primary' ? theme.firstColor : 
+    variant === 'secondary' ? theme.secondColor : theme.text};
   border: 1px solid ${({ variant, theme }) => 
-    variant === 'primary' ? `${theme.firstColor}40` : `${theme.secondColor}40`};
+    variant === 'primary' ? `${theme.firstColor}40` : 
+    variant === 'secondary' ? `${theme.secondColor}40` : `${theme.text}40`};
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.7rem;
@@ -204,73 +381,44 @@ export const Badge = styled.span<{ variant?: 'primary' | 'secondary' }>`
   letter-spacing: 0.5px;
 `;
 
-export const LatestUpdateSection = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.6) 0%, rgba(2, 6, 23, 0.8) 100%);
-  border-left: 4px solid ${({ theme }) => theme.firstColor};
-  border-radius: 0 16px 16px 0;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+/* ==========================================================================
+   SKELETON LOADERS
+   ========================================================================== */
 
-  h3 {
-    color: ${({ theme }) => theme.white};
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .latest-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .latest-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-
-    .name {
-      color: ${({ theme }) => theme.firstColor};
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .time {
-      color: ${({ theme }) => theme.text};
-      font-size: 0.8rem;
-    }
-  }
+const shimmer = keyframes`
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 `;
 
-export const StatusMessage = styled.div`
+export const SkeletonCard = styled(Card)`
+  &::before { display: none; }
+  pointer-events: none;
+`;
+
+export const SkeletonLine = styled.div<{ width?: string; height?: string; mb?: string }>`
+  width: ${({ width }) => width || '100%'};
+  height: ${({ height }) => height || '1rem'};
+  margin-bottom: ${({ mb }) => mb || '0.5rem'};
+  border-radius: 4px;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.05) 25%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: ${shimmer} 1.5s infinite linear;
+`;
+
+export const EmptyState = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
+  min-height: 200px;
   color: ${({ theme }) => theme.text};
-  font-size: 1.2rem;
+  text-align: center;
   gap: 1rem;
 
-  .loader {
-    width: 40px;
-    height: 40px;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    border-top-color: ${({ theme }) => theme.firstColor};
-    animation: spin 1s ease-in-out infinite;
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
+  h3 { color: ${({ theme }) => theme.white}; }
+  svg { color: ${({ theme }) => theme.secondColor}; }
 `;
