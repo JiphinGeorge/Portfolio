@@ -53,7 +53,7 @@ export const AboutContainer = styled.section`
   .AboutImg {
     width: 350px;
     height: 350px;
-    object-fit: cover;
+    object-fit: contain;
     align-self: center;
     border-radius: 10px;
     position: relative;
@@ -137,12 +137,14 @@ export const AboutContainer = styled.section`
 
     @media(min-width: 994px) {
       width: 100%;
-      height: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
     }
 
     @media(min-width: 1200px) {
       width: 100%;
-      height: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
       margin-left: 2rem;
       margin-right: 2rem;
     }
@@ -291,6 +293,7 @@ export const AboutContainer = styled.section`
 
     .AboutImg {
       width: 320px;
+      height: 320px;
     }
 
     .aboutContent {
