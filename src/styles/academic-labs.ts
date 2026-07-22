@@ -66,8 +66,9 @@ export const DegreeHeader = styled.div`
   }
 
   h3 {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.background === '#F8FAFC' ? theme.textPrimary : theme.white};
     font-size: 1.8rem;
+    font-weight: 800;
     margin: 0;
   }
 
@@ -106,7 +107,7 @@ export const SemesterBlock = styled.div`
   }
 
   h4 {
-    color: ${({ theme }) => theme.secondColor};
+    color: ${({ theme }) => theme.firstColor};
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
@@ -120,12 +121,13 @@ export const SemesterBlock = styled.div`
     gap: 1rem;
 
     li {
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.background === '#F8FAFC' ? theme.textPrimary : theme.text};
+      font-weight: 500;
       font-size: 0.95rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(255, 255, 255, 0.05);
+      background: ${({ theme }) => theme.background === '#F8FAFC' ? 'rgba(0, 0, 0, 0.03)' : 'rgba(255, 255, 255, 0.05)'};
       padding: 0.4rem 0.8rem;
       border-radius: 6px;
       
