@@ -19,7 +19,8 @@ export function Header() {
   };
 
   return (
-    <HeaderContainer style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
+    <>
+      <HeaderContainer style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
       <div className="mobile-content" style={{ display: 'flex' }}>
         <Link href={'/'}>
           <div className="logo">
@@ -33,17 +34,6 @@ export function Header() {
           </div>
           <span>Jiphin George</span>
         </Link>
-        <div className="settings">
-          <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
-        </div>
-        <style jsx>{`
-          .settings {
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
-            padding-left: 0.5rem;
-            margin: 0 0.5rem;
-          }
-        `}</style>
         <MobileIcon onClick={handleOpen}>
           {open ? (
             <X size={30} weight="bold" />
@@ -114,5 +104,7 @@ export function Header() {
         </Icons>
       </NavMenu>
     </HeaderContainer>
+    <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
+    </>
   );
 }
