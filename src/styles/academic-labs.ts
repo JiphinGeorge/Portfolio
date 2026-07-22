@@ -40,7 +40,7 @@ export const TimelineDegree = styled.div`
     bottom: -2rem;
     left: 20px;
     width: 2px;
-    background: linear-gradient(to bottom, ${({ theme }) => theme.firstColor}80, transparent);
+    background: linear-gradient(to bottom, ${({ theme }) => theme.firstColor}, ${({ theme }) => theme.secondColor});
     z-index: 0;
   }
 `;
@@ -61,7 +61,7 @@ export const DegreeHeader = styled.div`
     align-items: center;
     justify-content: center;
     color: ${({ theme }) => theme.firstColor};
-    box-shadow: 0 0 15px ${({ theme }) => theme.firstColor}50;
+    box-shadow: 0 0 15px ${({ theme }) => theme.firstColor}80;
     animation: ${pulse} 3s infinite;
   }
 
@@ -81,16 +81,18 @@ export const DegreeHeader = styled.div`
 export const SemesterBlock = styled.div`
   margin-left: 50px;
   background: ${({ theme }) => theme.backgroundAlt};
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 12px;
   padding: 1.5rem;
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 
   &:hover {
     transform: translateX(5px);
     border-color: ${({ theme }) => theme.firstColor}50;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
   }
 
   &::before {
@@ -147,10 +149,10 @@ export const FilterContainer = styled.div`
   margin-bottom: 3rem;
   padding: 1.5rem;
   background: ${({ theme }) => theme.backgroundAlt};
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 16px;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 `;
 
 export const SearchBar = styled.div`
@@ -231,7 +233,7 @@ export const GridContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  background: ${({ theme }) => theme.backgroundSecond};
+  background: ${({ theme }) => theme.backgroundAlt};
   backdrop-filter: blur(12px);
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 16px;
@@ -241,6 +243,7 @@ export const Card = styled.div`
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 
   &::before {
     content: '';
@@ -256,7 +259,7 @@ export const Card = styled.div`
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.15);
     border-color: ${({ theme }) => theme.firstColor}50;
     &::before { opacity: 1; }
   }
@@ -306,8 +309,8 @@ export const Card = styled.div`
     margin-bottom: 1.5rem;
 
     span {
-      background: ${({ theme }) => theme.backgroundAlt};
-      color: ${({ theme }) => theme.textPrimary};
+      background: ${({ theme }) => theme.firstColor}10;
+      color: ${({ theme }) => theme.firstColor};
       border: 1px solid ${({ theme }) => theme.border};
       padding: 0.3rem 0.6rem;
       border-radius: 4px;
@@ -365,11 +368,15 @@ export const Card = styled.div`
 `;
 
 export const Badge = styled.span<{ variant?: 'primary' | 'secondary' | 'outline' }>`
-  background: ${({ theme }) => theme.backgroundAlt};
-  color: ${({ theme }) => theme.textPrimary};
+  background: ${({ variant, theme }) => 
+    variant === 'primary' ? `${theme.firstColor}10` : 
+    variant === 'secondary' ? `${theme.secondColor}10` : theme.backgroundAlt};
+  color: ${({ variant, theme }) => 
+    variant === 'primary' ? theme.firstColor : 
+    variant === 'secondary' ? theme.secondColor : theme.textPrimary};
   border: 1px solid ${({ variant, theme }) => 
-    variant === 'primary' ? `${theme.firstColor}60` : 
-    variant === 'secondary' ? `${theme.secondColor}60` : theme.border};
+    variant === 'primary' ? `${theme.firstColor}30` : 
+    variant === 'secondary' ? `${theme.secondColor}30` : theme.border};
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.7rem;
