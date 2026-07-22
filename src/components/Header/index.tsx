@@ -71,6 +71,11 @@ export function Header() {
             </Link>
           </li>
           <li>
+            <Link href={'/academic-labs'}>
+              <span>Academic Labs</span>
+            </Link>
+          </li>
+          <li>
             <Link href={'/resume'}>
               <span>Resume</span>
             </Link>
