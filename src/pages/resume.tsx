@@ -11,7 +11,7 @@ import dynamic from 'next/dynamic'
 // Dynamically import the ResumeViewer to avoid SSR window/document issues with pdf.js
 const ResumeViewer = dynamic(() => import('../components/CV/ResumeViewer'), {
   ssr: false,
-  loading: () => <h3 style={{ color: '#00f0ff', textAlign: 'center', margin: '5rem 0' }}>Initializing PDF Viewer Engine...</h3>,
+  loading: () => <h3 style={{ color: '#00f0ff', textAlign: 'center', margin: '5rem 0' }}>Loading Resume Engine...</h3>,
 });
 
 export default function Resume() {
@@ -32,24 +32,26 @@ export default function Resume() {
         />
       </Head>
 
-      <ScrollTop />
+      <Header />
+
       <Section>
         <Title>
           <p>../curriculum</p>
-          Curriculum Vitae
+          Resume
           <span>
-            <BsFileText /> Resume
+            <BsFileText /> Curriculum Vitae
           </span>
         </Title>
-        <Description style={{width:'100%', textAlign: 'center', marginBottom: '1px'}}>
+        <Description>
           This is my updated resume. You can preview it below or download a copy.
         </Description>
-
+        
         <PageSection>
           <ResumeViewer pdfUrl="/pdf/Jiphin_George_Resume.pdf" />
         </PageSection>
       </Section>
       <Footer />
+      <ScrollTop />
     </>
   )
 }

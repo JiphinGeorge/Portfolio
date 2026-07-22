@@ -150,3 +150,9 @@ export const ErrorState = styled.div`
   color: #ff4d4f;
   font-size: 1.2rem;
 `;
+
+export const DownloadContainer = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+`;
