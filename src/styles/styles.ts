@@ -172,7 +172,7 @@ export const ButtonPrimary = styled.button`
   margin-top: 2rem;
   border: 2px solid;
   border-radius: 5px;
-  border-image: linear-gradient(225deg, #00d9ff 0%, #c001fa 100%) 1;
+  border-image: linear-gradient(225deg, ${props => props.theme.secondColor} 0%, ${props => props.theme.firstColor} 100%) 1;
   display: block;
   overflow: hidden;
   position: relative;
@@ -184,7 +184,7 @@ export const ButtonPrimary = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+    background: linear-gradient(225deg, ${props => props.theme.secondColor}e1 0%, ${props => props.theme.firstColor}ce 100%);
     z-index: -1;
     transition: transform 0.5s;
     transform-origin: 0 0;
@@ -193,10 +193,10 @@ export const ButtonPrimary = styled.button`
   }
 
   &:hover {
-    color: ${props => props.theme.dark};
+    color: ${props => props.theme.white};
     &:before {
       transform: scale(1);
-      background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+      background: linear-gradient(225deg, ${props => props.theme.secondColor}e1 0%, ${props => props.theme.firstColor}ce 100%);
     }
   }
 
@@ -206,10 +206,10 @@ export const ButtonPrimary = styled.button`
     }
 
     &:hover {
-      color: ${props => props.theme.dark};
+      color: ${props => props.theme.white};
       &:before {
         transform: scaleX(1);
-        background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+        background: linear-gradient(225deg, ${props => props.theme.secondColor}e1 0%, ${props => props.theme.firstColor}ce 100%);
       }
     }
   }
@@ -227,7 +227,7 @@ export const ButtonSecondary = styled.button`
   color: ${props => props.theme.text};
   font-size: 1rem;
   font-weight: 700;
-  background-color: black;
+  background-color: ${props => props.theme.background};
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em 0.25em ${props => props.theme.secondColor},
