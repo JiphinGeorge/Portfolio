@@ -2,19 +2,20 @@ const projects = [
   {
     id: 1,
     url: 'xenova-health',
-    banner: '/projects/xenova-health-placeholder.png',
-    img: '/projects/xenova-health-placeholder.png',
+    banner: '/projects/xenova-health-cover.png',
+    img: '/projects/xenova-health-cover.png',
     title: 'Xenova Health',
     type: 'App',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/Xenova-Health',
     blog: '#',
     web: '#',
-    description: 'AI-Powered Health Tracking app featuring Weight & Nutrition Management and an Intermittent Fasting Coach.',
+    description: 'Xenova Health is a next-generation AI-powered mobile health tracking application designed to simplify personal wellness. The project aims to consolidate various health management tasks into a single, intuitive platform.\n\nThe application serves as an Intermittent Fasting Coach and a comprehensive Weight & Nutrition Management system. Built specifically for modern users, it integrates cutting-edge AI capabilities to provide personalized insights, reducing the friction of logging and tracking daily health metrics.\n\nFeatures:\n✓ AI-Powered Health Tracking and insights\n✓ Weight & Nutrition Management dashboard\n✓ Intermittent Fasting Coach functionality\n✓ Personal Wellness Platform integration\n✓ Cross-platform mobile support',
     tags: [{name: 'App'}, {name: 'Health'}],
     tech: [
       { name: 'Flutter', icon: '/icons/flutter.svg', color: '#38BDF8', rgb: '56, 189, 248' },
       { name: 'Firebase', icon: '/icons/Firebase.png', color: '#FFCA28', rgb: '255, 202, 40' },
+      { name: 'Riverpod', icon: '/icons/dart.svg', color: '#000000', rgb: '0, 0, 0' },
       { name: 'Gemini AI', icon: '/icons/Google.jpg', color: '#4285F4', rgb: '66, 133, 244' }
     ],
     print: [],
@@ -22,7 +23,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/xenova-health-placeholder.png',
+    backgroundImage: '/projects/xenova-health-cover.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -30,27 +31,29 @@ const projects = [
   {
     id: 2,
     url: 'readify-ai',
-    banner: '/projects/Readify.png',
-    img: '/projects/Readify.png',
+    banner: '/projects/readify/screenshot.png',
+    img: '/projects/readify/screenshot.png',
     title: 'Readify AI',
     type: 'Website',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/Readify-AI',
     blog: '#',
     web: '#',
-    description: 'A Flask-based web application that converts PDF documents into audiobooks using text extraction and AI-powered text-to-speech.',
+    description: 'Readify AI addresses the accessibility and convenience gap in reading digital documents by transforming static PDFs into engaging audiobooks. The project was built to help users seamlessly consume written content on the go.\n\nThe web application extracts text from uploaded PDF documents and leverages AI-powered text-to-speech to generate natural-sounding audio. It processes everything asynchronously to ensure a smooth user experience without locking up the UI during heavy generation tasks.\n\nFeatures:\n✓ Smart PDF Extraction from uploaded documents\n✓ AI-powered speech synthesis with multiple language support (English, Malayalam, Hindi, Tamil)\n✓ Interactive Player with playback controls (play/pause, rewind, speed control)\n✓ Responsive Design with premium dark theme and animated backgrounds\n✓ Asynchronous Background Processing using background threads',
     tags: [{name: 'Web App'}, {name: 'AI / Machine Learning'}],
     tech: [
       { name: 'HTML/CSS/JS', icon: '/icons/JS.png', color: '#38BDF8', rgb: '56, 189, 248' },
       { name: 'Python', icon: '/icons/python.png', color: '#FFCA28', rgb: '255, 202, 40' },
       { name: 'Flask', icon: '/icons/flask.png', color: '#000000', rgb: '0, 0, 0' }
     ],
-    print: [],
+    print: [
+      { id: 1, name: 'Web Interface', description: 'The main dashboard and audiobook generation interface.', img: '/projects/readify/screenshot.png' }
+    ],
     team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/Readify.png',
+    backgroundImage: '/projects/readify/screenshot.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -58,27 +61,34 @@ const projects = [
   {
     id: 3,
     url: 'qualivision-ai',
-    banner: '/projects/QualiVision.jpg',
-    img: '/projects/QualiVision.jpg',
-    title: 'QualiVision AI',
+    banner: '/projects/qualivision/dashboard.png',
+    img: '/projects/qualivision/dashboard.png',
+    title: 'QualiVision AI - Industrial Quality Control System',
     type: 'AI / Machine Learning',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/QualiVision-AI---Industrial-Quality-Control-System',
     blog: '#',
     web: '#',
-    description: 'An AI-powered industrial quality inspection system for real-time tomato freshness classification using Computer Vision and Transfer Learning.',
+    description: 'QualiVision AI is an advanced industrial quality inspection system designed to automate manual sorting processes. The project specifically focuses on real-time tomato freshness classification to reduce waste and improve manufacturing efficiency.\n\nUsing cutting-edge Computer Vision and Transfer Learning techniques via EfficientNet, the system analyzes camera feeds to instantly determine produce quality. It features a fully integrated Flask web dashboard that provides production line managers with live monitoring and historical analytics.\n\nFeatures:\n✓ Real-time tomato freshness classification\n✓ Deep learning based image analysis using TensorFlow\n✓ Transfer learning utilizing the EfficientNet architecture\n✓ Live inspection dashboard via Flask web integration\n✓ Historical quality analytics and reporting',
     tags: [{name: 'AI / Machine Learning'}],
     tech: [
       { name: 'Python', icon: '/icons/python.png', color: '#38BDF8', rgb: '56, 189, 248' },
       { name: 'TensorFlow', icon: '/icons/python.png', color: '#FF6F00', rgb: '255, 111, 0' },
-      { name: 'OpenCV', icon: '/icons/python.png', color: '#5C3A21', rgb: '92, 58, 33' }
+      { name: 'Flask', icon: '/icons/flask.png', color: '#000000', rgb: '0, 0, 0' },
+      { name: 'OpenCV', icon: '/icons/python.png', color: '#5C3A21', rgb: '92, 58, 33' },
+      { name: 'SQLite', icon: '/icons/sql.svg', color: '#FFCA28', rgb: '255, 202, 40' }
     ],
-    print: [],
+    print: [
+      { id: 1, name: 'Dashboard', description: 'The main analytics dashboard providing a high-level overview of quality metrics.', img: '/projects/qualivision/dashboard.png' },
+      { id: 2, name: 'Live Monitoring', description: 'Real-time camera feed analysis classifying produce quality instantly.', img: '/projects/qualivision/live-monitoring.png' },
+      { id: 3, name: 'Inspection Details', description: 'Detailed inspection logs and system metrics.', img: '/projects/qualivision/inspection.png' },
+      { id: 4, name: 'Dark Mode UI', description: 'The system interface rendering in dark mode for low-light environments.', img: '/projects/qualivision/dark-mode.png' }
+    ],
     team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/QualiVision.jpg',
+    backgroundImage: '/projects/qualivision/dashboard.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -86,27 +96,32 @@ const projects = [
   {
     id: 4,
     url: 'smart-city-issue-management',
-    banner: '/projects/smart-city-dashboard.png',
-    img: '/projects/smart-city-dashboard.png',
+    banner: '/projects/smartcity/dashboard.png',
+    img: '/projects/smartcity/dashboard.png',
     title: 'Smart City Issue Management',
     type: 'Website',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/smart-city-issue-management',
     blog: '#',
     web: '#',
-    description: 'A comprehensive system for managing and reporting smart city issues efficiently with analytics and admin dashboards.',
+    description: 'The Smart City Issue Management system was built to bridge the gap between citizens and municipal authorities. It provides a structured platform for reporting, tracking, and resolving urban infrastructure problems.\n\nThe application allows residents to log issues (such as potholes or broken streetlights) and provides city administrators with a powerful dashboard to manage workflows, assign tasks, and view analytics. It acts as a digital nervous system for modern urban maintenance.\n\nFeatures:\n✓ Citizen issue reporting portal\n✓ Administrator dashboard for task management\n✓ Issue tracking and status updates\n✓ Analytics page for urban maintenance metrics\n✓ Secure login and user session management',
     tags: [{name: 'Web App'}],
     tech: [
       { name: 'HTML/CSS/JS', icon: '/icons/JS.png', color: '#38BDF8', rgb: '56, 189, 248' },
       { name: 'PHP', icon: '/icons/JS.png', color: '#4479A1', rgb: '68, 121, 161' },
       { name: 'MySQL', icon: '/icons/sql.svg', color: '#FFCA28', rgb: '255, 202, 40' }
     ],
-    print: [],
+    print: [
+      { id: 1, name: 'Admin Dashboard', description: 'The main dashboard for city administrators to track all reported issues.', img: '/projects/smartcity/dashboard.png' },
+      { id: 2, name: 'Login Portal', description: 'Secure authentication gateway for residents and administrators.', img: '/projects/smartcity/login.png' },
+      { id: 3, name: 'Analytics', description: 'Data visualizations showing issue resolution metrics and category breakdowns.', img: '/projects/smartcity/analytics.png' },
+      { id: 4, name: 'Report Modal', description: 'Interactive modal for citizens to submit new infrastructure reports.', img: '/projects/smartcity/report_modal.png' }
+    ],
     team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/smart-city-dashboard.png',
+    backgroundImage: '/projects/smartcity/dashboard.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -114,25 +129,28 @@ const projects = [
   {
     id: 5,
     url: 'typing-speed-tester',
-    banner: '/projects/typing-speed-tester.png',
-    img: '/projects/typing-speed-tester.png',
+    banner: '/projects/typing/typing_interface.png',
+    img: '/projects/typing/typing_interface.png',
     title: 'Typing Speed Tester',
     type: 'Website',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/Typing-Speed-Tester',
     blog: '#',
     web: '#',
-    description: 'An interactive web app that measures user typing speed in Words Per Minute (WPM), accuracy, and tracks performance.',
+    description: 'The Typing Speed Tester is an interactive, browser-based utility designed to help users measure and improve their keyboarding skills. The objective was to create a lightweight, responsive tool with real-time feedback.\n\nThe application tracks keystrokes dynamically, calculating Words Per Minute (WPM) and accuracy on the fly. It features a clean user interface that highlights errors instantly, providing an engaging environment for practice and performance tracking.\n\nFeatures:\n✓ Real-time Words Per Minute (WPM) calculation\n✓ Live accuracy and error tracking\n✓ Dynamic typing interface with visual feedback\n✓ Performance results dashboard\n✓ Fully responsive web design',
     tags: [{name: 'Web App'}, {name: 'Personal Projects'}],
     tech: [
       { name: 'HTML/CSS/JS', icon: '/icons/JS.png', color: '#38BDF8', rgb: '56, 189, 248' }
     ],
-    print: [],
+    print: [
+      { id: 1, name: 'Typing Interface', description: 'The main interactive area where users type and receive real-time feedback.', img: '/projects/typing/typing_interface.png' },
+      { id: 2, name: 'Results Dashboard', description: 'The final results screen displaying WPM, accuracy, and total errors.', img: '/projects/typing/dashboard_results.png' }
+    ],
     team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2023',
     gif: '#',
-    backgroundImage: '/projects/typing-speed-tester.png',
+    backgroundImage: '/projects/typing/typing_interface.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -148,7 +166,7 @@ const projects = [
     github: 'https://github.com/JiphinGeorge/MiniCRM',
     blog: '#',
     web: '#',
-    description: 'A glassmorphic customer-relationship manager featuring user authentication, protected routes, and customer CRUD operations.',
+    description: 'MiniCRM was developed to provide small businesses and freelancers with a streamlined, visually appealing tool to manage client relationships. The goal was to build a secure, full-stack application that focuses on core CRM functionalities without unnecessary bloat.\n\nThe platform is wrapped in a modern glassmorphic user interface. It features robust user authentication, protected routing, and full CRUD (Create, Read, Update, Delete) operations for customer data management, all backed by a reliable Node.js and MySQL architecture.\n\nFeatures:\n✓ Glassmorphic UI design system\n✓ Secure User Authentication & Protected Routes\n✓ Complete Customer CRUD Operations\n✓ RESTful API backend integration\n✓ Relational database management',
     tags: [{name: 'Personal Projects'}, {name: 'Web App'}],
     tech: [
       { name: 'React', icon: '/icons/react.png', color: '#38BDF8', rgb: '56, 189, 248' },
@@ -168,26 +186,31 @@ const projects = [
   {
     id: 7,
     url: 'xynapse',
-    banner: '/projects/xynapse-cover.png',
-    img: '/projects/xynapse-cover.png',
+    banner: '/projects/xynapse/1.png',
+    img: '/projects/xynapse/1.png',
     title: 'Xynapse - A Collaboration Platform',
     type: 'App',
     icon: '/jg-logo.png',
     github: 'https://github.com/JiphinGeorge/Xynapse-A-Collaboration-Platform_Hackathon',
     blog: '#',
     web: '#',
-    description: 'An upcoming mobile application aimed at community engagement and team collaboration built in Flutter for a Hackathon.',
+    description: 'Xynapse is a mobile application conceptualized and built during a fast-paced hackathon. The objective was to create a centralized collaboration platform tailored for community engagement, team communication, and project tracking.\n\nDeveloped entirely in Flutter, the app provides a smooth, cross-platform native experience. It leverages SQLite for efficient local data storage, allowing users to interact with the platform seamlessly while managing team activities and updates.\n\nFeatures:\n✓ Cross-platform mobile team collaboration interface\n✓ Local data persistence using SQLite\n✓ Community engagement feeds and updates\n✓ Hackathon core requirement fulfillment\n✓ Modular folder structure for scalability',
     tags: [{name: 'Mobile App'}],
     tech: [
       { name: 'Flutter', icon: '/icons/flutter.svg', color: '#38BDF8', rgb: '56, 189, 248' },
       { name: 'SQLite', icon: '/icons/sql.svg', color: '#38BDF8', rgb: '56, 189, 248' }
     ],
-    print: [],
+    print: [
+      { id: 1, name: 'Home Screen', description: 'Main community feed and collaboration dashboard.', img: '/projects/xynapse/1.png' },
+      { id: 2, name: 'Team Hub', description: 'Team overview and project tracking interface.', img: '/projects/xynapse/2.png' },
+      { id: 3, name: 'Details View', description: 'Detailed view of individual collaboration items.', img: '/projects/xynapse/3.png' },
+      { id: 4, name: 'Settings Profile', description: 'User profile and app configuration settings.', img: '/projects/xynapse/4.png' }
+    ],
     team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/xynapse-cover.png',
+    backgroundImage: '/projects/xynapse/1.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
@@ -209,46 +232,16 @@ const projects = [
       {name: 'AI / Machine Learning'},
     ],
     tech: [
-      {
-        name: 'Django',
-        icon: '/icons/python.png',
-        color: '#FFFFFF',
-        rgb: '255, 255, 255'
-      },
-      {
-        name: 'Python',
-        icon: '/icons/python.png',
-        color: '#38BDF8',
-        rgb: '56, 189, 248'
-      },
-      {
-        name: 'TensorFlow',
-        icon: '/icons/python.png',
-        color: '#FF6F00',
-        rgb: '255, 111, 0'
-      },
-      {
-        name: 'Keras',
-        icon: '/icons/python.png',
-        color: '#D00000',
-        rgb: '208, 0, 0'
-      },
+      { name: 'Django', icon: '/icons/python.png', color: '#FFFFFF', rgb: '255, 255, 255' },
+      { name: 'Python', icon: '/icons/python.png', color: '#38BDF8', rgb: '56, 189, 248' },
+      { name: 'TensorFlow', icon: '/icons/python.png', color: '#FF6F00', rgb: '255, 111, 0' },
+      { name: 'Keras', icon: '/icons/python.png', color: '#D00000', rgb: '208, 0, 0' },
     ],
     print: [],
-    team: [
-      {
-        id: '1',
-        name: 'Jiphin George',
-        role: 'Developer',
-        img: '/projects/Teams/Jiphin.jpg',
-        github: 'https://github.com/JiphinGeorge',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/jiphin_george'
-      },
-    ],
+    team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
-    gif: '/projects/Portfolio/Cool.mp4',
+    gif: '#',
     backgroundImage: '/projects/Picture1.png',
     trelloboard: '#',
     trelloedit: '#',
@@ -270,28 +263,13 @@ const projects = [
       {name: 'Personal Projects'},
     ],
     tech: [
-      {
-        name: 'HTML/CSS/JS',
-        icon: '/icons/HTML.png',
-        color: '#38BDF8',
-        rgb: '56, 189, 248'
-      },
+      { name: 'HTML/CSS/JS', icon: '/icons/HTML.png', color: '#38BDF8', rgb: '56, 189, 248' },
     ],
     print: [],
-    team: [
-      {
-        id: '1',
-        name: 'Jiphin George',
-        role: 'Developer',
-        img: '/projects/Teams/Jiphin.jpg',
-        github: 'https://github.com/JiphinGeorge',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/jiphin_george'
-      },
-    ],
+    team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2023',
-    gif: '/projects/Portfolio/Cool.mp4',
+    gif: '#',
     backgroundImage: '/projects/useless-webpages-cover.png',
     trelloboard: '#',
     trelloedit: '#',
@@ -314,31 +292,11 @@ const projects = [
       {name: 'Machine Learning'},
     ],
     tech: [
-      {
-        name: 'Python',
-        icon: '/icons/python.png',
-        color: '#38BDF8',
-        rgb: '56, 189, 248'
-      },
-      {
-        name: 'Data Science',
-        icon: '/icons/python.png',
-        color: '#FF6F00',
-        rgb: '255, 111, 0'
-      },
+      { name: 'Python', icon: '/icons/python.png', color: '#38BDF8', rgb: '56, 189, 248' },
+      { name: 'Data Science', icon: '/icons/python.png', color: '#FF6F00', rgb: '255, 111, 0' },
     ],
     print: [],
-    team: [
-      {
-        id: '1',
-        name: 'Jiphin George',
-        role: 'Developer',
-        img: '/projects/Teams/Jiphin.jpg',
-        github: 'https://github.com/JiphinGeorge',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/jiphin_george'
-      },
-    ],
+    team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2024',
     gif: '#',
@@ -364,31 +322,11 @@ const projects = [
       {name: 'Web App'},
     ],
     tech: [
-      {
-        name: 'Python',
-        icon: '/icons/python.png',
-        color: '#38BDF8',
-        rgb: '56, 189, 248'
-      },
-      {
-        name: 'Flask',
-        icon: '/icons/python.png',
-        color: '#000000',
-        rgb: '0, 0, 0'
-      },
+      { name: 'Python', icon: '/icons/python.png', color: '#38BDF8', rgb: '56, 189, 248' },
+      { name: 'Flask', icon: '/icons/python.png', color: '#000000', rgb: '0, 0, 0' },
     ],
     print: [],
-    team: [
-      {
-        id: '1',
-        name: 'Jiphin George',
-        role: 'Developer',
-        img: '/projects/Teams/Jiphin.jpg',
-        github: 'https://github.com/JiphinGeorge',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/jiphin_george'
-      },
-    ],
+    team: [{ id: '1', name: 'Jiphin George', role: 'Developer', img: '/projects/Teams/Jiphin.jpg', github: 'https://github.com/JiphinGeorge', linkedin: '#', instagram: 'https://www.instagram.com/jiphin_george' }],
     status: 'Completed',
     year: '2023',
     gif: '#',
