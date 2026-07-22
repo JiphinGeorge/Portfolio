@@ -6,7 +6,8 @@ export const HeaderContainer = styled.header`
   height: 3.5rem;
   font-weight: 600;
   font-size: 1.2rem;
-  background: ${props => props.theme.background};
+  background: ${props => props.theme.navBackground || props.theme.background};
+  backdrop-filter: blur(12px);
 
   a {
     color: ${props => props.theme.textPrimary};
@@ -18,7 +19,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
-    box-shadow: ${props => props.theme.background} 0px 10px 30px 1px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
   @media (min-width: 2000px) {

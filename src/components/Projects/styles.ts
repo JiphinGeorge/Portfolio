@@ -32,10 +32,15 @@ export const ProjectsContent = styled.div`
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid ${props => props.theme.border};
+  background: ${props => props.theme.backgroundAlt};
+  backdrop-filter: blur(12px);
+  border: 1px solid ${props => props.theme.border};
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 
   &:hover{
+    transform: translateY(-5px);
     border-color: ${props => props.theme.firstColor};
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.15);
     border-radius: 11px;
   }
 

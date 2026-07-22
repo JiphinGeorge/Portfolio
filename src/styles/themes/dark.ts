@@ -27,9 +27,8 @@ export const darkTheme: DefaultTheme = {
     gray: '#b1bcdc',
     gray_light: '#b2bbcf',
     gray_easy: '#7b89a8',
-    gray_medium: '#767c85',
-  
     border: '#262338',
-    borderSecond: '#1e1e25'
+    borderSecond: '#1e1e25',
+    navBackground: 'rgba(2, 6, 23, 0.85)',
   };
   

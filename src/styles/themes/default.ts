@@ -31,5 +31,5 @@ export const lightTheme: DefaultTheme = {
 
   border: 'rgba(124, 58, 237, 0.15)',
   borderSecond: 'rgba(6, 182, 212, 0.15)',
-
+  navBackground: 'rgba(248, 250, 252, 0.85)',
 };
