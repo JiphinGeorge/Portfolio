@@ -26,8 +26,21 @@ import {
   EmptyState
 } from '../styles/academic-labs';
 import { labProgramsConfig, LabProgramConfig } from '../data/labPrograms';
-import { formatDistanceToNow } from 'date-fns';
 import FadeInAnimation from '../components/Animations/FadeInAnimation';
+
+function formatDistanceToNow(date: Date): string {
+  const diffInSeconds = Math.floor((new Date().getTime() - date.getTime()) / 1000);
+  if (diffInSeconds < 60) return `${diffInSeconds} seconds`;
+  const diffInMinutes = Math.floor(diffInSeconds / 60);
+  if (diffInMinutes < 60) return `${diffInMinutes} minutes`;
+  const diffInHours = Math.floor(diffInMinutes / 60);
+  if (diffInHours < 24) return `${diffInHours} hours`;
+  const diffInDays = Math.floor(diffInHours / 24);
+  if (diffInDays < 30) return `${diffInDays} days`;
+  const diffInMonths = Math.floor(diffInDays / 30);
+  if (diffInMonths < 12) return `${diffInMonths} months`;
+  return `${Math.floor(diffInMonths / 12)} years`;
+}
 
 interface RepoData {
   config: LabProgramConfig;
