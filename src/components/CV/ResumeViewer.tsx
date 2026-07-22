@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { CaretLeft, CaretRight, DownloadSimple } from 'phosphor-react';
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
+// CSS imports removed temporarily to isolate Next.js global CSS issues
 import {
   ViewerContainer,
   DocumentWrapper,
@@ -69,7 +68,7 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
     <ViewerContainer>
       <h1 style={{ color: 'white' }}>DEBUG: ResumeViewer is mounting</h1>
       <DocumentWrapper>
-        {/* <Document
+        <Document
           file={pdfUrl}
           onLoadSuccess={onDocumentLoadSuccess}
           loading={<LoadingState>Loading Resume...</LoadingState>}
@@ -78,11 +77,10 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
           <Page 
             pageNumber={pageNumber} 
             width={pageWidth}
-            renderTextLayer={true}
-            renderAnnotationLayer={true}
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
           />
-        </Document> */}
-        <h2 style={{ color: 'white' }}>If you can see this, react-pdf is the issue.</h2>
+        </Document>
       </DocumentWrapper>
 
       <ControlBar>
