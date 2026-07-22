@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import projects from '../../data/projects';
-import { AllBlogs } from './Blogs';
 import { ProjectsContainer, ProjectsContent, TagButton } from './styles';
 import { Container, Title } from '../../styles/styles';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
@@ -85,7 +84,6 @@ export function Projects() {
           ))}
       </ProjectsContainer>
 
-      <AllBlogs title="Read all of my Blogs" />
     </Container>
   );
 }
