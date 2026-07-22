@@ -69,19 +69,11 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
     <ViewerContainer>
       <h1 style={{ color: 'white' }}>DEBUG: ResumeViewer is mounting</h1>
       <DocumentWrapper>
-        <Document
+        {/* <Document
           file={pdfUrl}
           onLoadSuccess={onDocumentLoadSuccess}
-          loading={
-            <LoadingState>
-              Loading Resume...
-            </LoadingState>
-          }
-          error={
-            <ErrorState>
-              Failed to load PDF. Please try again or download it directly.
-            </ErrorState>
-          }
+          loading={<LoadingState>Loading Resume...</LoadingState>}
+          error={<ErrorState>Failed to load PDF. Please try again or download it directly.</ErrorState>}
         >
           <Page 
             pageNumber={pageNumber} 
@@ -89,7 +81,8 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
             renderTextLayer={true}
             renderAnnotationLayer={true}
           />
-        </Document>
+        </Document> */}
+        <h2 style={{ color: 'white' }}>If you can see this, react-pdf is the issue.</h2>
       </DocumentWrapper>
 
       <ControlBar>
