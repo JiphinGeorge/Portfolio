@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState, useEffect, useMemo } from 'react';
-import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ScrollTop } from '../components/ScrollTop';
 import { Section, Title, Description } from '../styles/styles';
@@ -155,8 +154,6 @@ export default function AcademicLabs() {
         <title>Academic Labs | Jiphin George</title>
         <meta name="description" content="Explore programming laboratory implementations completed during BCA and MCA covering Android development, Java, PHP, algorithms, web technologies, and more." />
       </Head>
-
-      <Header />
 
       <Section style={{ paddingTop: '8rem' }}>
         <Title>
