@@ -67,7 +67,7 @@ const ParticleSystem = ({
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
       ctx.fillStyle = theme.firstColor || '#00d9ff';
-      ctx.globalAlpha = 2;
+      ctx.globalAlpha = theme.background === '#F8FAFC' ? 0.3 : 0.8;
       ctx.fill();
       ctx.globalAlpha = 1;
     }
@@ -94,7 +94,10 @@ const ParticleSystem = ({
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 217, 255, ${opacity * 0.3})`;
+          const isLightMode = theme.background === '#F8FAFC';
+          ctx.strokeStyle = isLightMode 
+            ? `rgba(6, 182, 212, ${opacity * 0.15})`
+            : `rgba(0, 217, 255, ${opacity * 0.3})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
