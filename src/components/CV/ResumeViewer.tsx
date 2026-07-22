@@ -16,7 +16,7 @@ import {
 import { ButtonSecondAlt } from '../../styles/styles';
 
 // Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 interface ResumeViewerProps {
   pdfUrl: string;
@@ -64,8 +64,7 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
     changePage(1);
   }
 
-  if (!isClient) return null; // Avoid SSR hydration mismatches
-
+  // isClient check removed since we use next/dynamic with ssr: false
   return (
     <ViewerContainer>
       <DocumentWrapper>
