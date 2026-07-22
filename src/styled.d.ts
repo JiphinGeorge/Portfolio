@@ -24,6 +24,7 @@ declare module 'styled-components' {
     gray_light: string;
     gray_easy: string;
     gray_medium: string;
+    border: string;
     borderSecond: string;
     navBackground?: string;
   }

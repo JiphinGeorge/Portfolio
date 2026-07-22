@@ -16,8 +16,9 @@ A modern, responsive personal portfolio website built with **Next.js 14**, **Typ
 - **Education & Certifications** — Academic background and certificate PDFs
 - **Contact Form** — Email.js-powered contact form with Calendly meeting scheduler
 - **GitHub Activity** — Live GitHub contribution calendar and stats
+- **Academic Labs** — Academic journey timeline and GitHub-fetched lab programs with automated README parsing
 - **Resume Page** — Embedded Canva resume with download option
-- **Dark/Light Mode** — Theme toggle with smooth transitions
+- **Dark/Light Mode** — Deep space dark mode & premium glassmorphism SaaS-inspired light mode
 - **Responsive Design** — Mobile-first, works on all screen sizes
 - **Page Transitions** — Smooth route animations with Framer Motion
 - **SEO Optimized** — Meta tags, Open Graph, Twitter cards
@@ -89,6 +90,7 @@ Portfolio/
 │   │   ├── contact.tsx       # Contact page (/contact)
 │   │   ├── projects.tsx      # Projects listing (/projects)
 │   │   ├── project/[id].tsx  # Dynamic project detail page
+│   │   ├── academic-labs.tsx # Academic lab programs & timeline
 │   │   ├── experience.tsx    # Experience page (/experience)
 │   │   ├── resume.tsx        # Resume page (/resume)
 │   │   ├── privacypolicy.tsx  # Privacy Policy
@@ -104,6 +106,7 @@ Portfolio/
 │   │   ├── experiences.ts    # Work experience data
 │   │   ├── educations.ts     # Education history
 │   │   ├── certifications.ts # Certification details
+│   │   ├── labPrograms.ts    # Academic labs config & metadata
 │   │   └── github.json       # GitHub config
 │   │
 │   ├── context/              # React contexts (Theme)
