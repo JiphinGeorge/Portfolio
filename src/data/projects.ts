@@ -168,8 +168,8 @@ const projects = [
   {
     id: 7,
     url: 'xynapse',
-    banner: '/projects/xynapse.png',
-    img: '/projects/xynapse.png',
+    banner: '/projects/xynapse-cover.png',
+    img: '/projects/xynapse-cover.png',
     title: 'Xynapse - A Collaboration Platform',
     type: 'App',
     icon: '/jg-logo.png',
@@ -187,7 +187,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     gif: '#',
-    backgroundImage: '/projects/xynapse.png',
+    backgroundImage: '/projects/xynapse-cover.png',
     trelloboard: '#',
     trelloedit: '#',
     video: '#'
