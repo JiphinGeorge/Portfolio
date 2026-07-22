@@ -81,7 +81,10 @@ export default function Github() {
       `https://api.github.com/users/${GITHUB_USERNAME}/repos`
     );
     const data2 = await res2.json();
-    let stars = data2.reduce((a: any, b: any) => a + b.stargazers_count, 0);
+    let stars = 0;
+    if (Array.isArray(data2)) {
+      stars = data2.reduce((a: any, b: any) => a + b.stargazers_count, 0);
+    }
     setTotalStars(stars);
   };
 

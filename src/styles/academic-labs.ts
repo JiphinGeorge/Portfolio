@@ -80,9 +80,9 @@ export const DegreeHeader = styled.div`
 
 export const SemesterBlock = styled.div`
   margin-left: 50px;
-  background: rgba(15, 23, 42, 0.4);
+  background: ${({ theme }) => theme.backgroundAlt};
   backdrop-filter: blur(10px);
-  border: 1px solid ${({ theme }) => theme.firstColor}20;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 12px;
   padding: 1.5rem;
   position: relative;
@@ -146,9 +146,9 @@ export const FilterContainer = styled.div`
   max-width: 1000px;
   margin-bottom: 3rem;
   padding: 1.5rem;
-  background: rgba(15, 23, 42, 0.4);
+  background: ${({ theme }) => theme.backgroundAlt};
   backdrop-filter: blur(10px);
-  border: 1px solid ${({ theme }) => theme.firstColor}30;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 16px;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 `;
@@ -156,8 +156,8 @@ export const FilterContainer = styled.div`
 export const SearchBar = styled.div`
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid ${({ theme }) => theme.firstColor}40;
+  background: ${({ theme }) => theme.background};
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 8px;
   padding: 0.8rem 1rem;
   gap: 1rem;
@@ -171,7 +171,7 @@ export const SearchBar = styled.div`
     background: transparent;
     border: none;
     outline: none;
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.textPrimary};
     width: 100%;
     font-size: 1rem;
 
@@ -193,7 +193,7 @@ export const FilterGroup = styled.div`
   align-items: center;
 
   h4 {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.textPrimary};
     margin-right: 1rem;
     font-size: 1rem;
     min-width: 80px;
@@ -231,9 +231,9 @@ export const GridContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  background: rgba(15, 23, 42, 0.6);
+  background: ${({ theme }) => theme.backgroundSecond};
   backdrop-filter: blur(12px);
-  border: 1px solid ${({ theme }) => theme.firstColor}20;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 16px;
   padding: 1.5rem;
   display: flex;
@@ -277,7 +277,7 @@ export const Card = styled.div`
         min-width: 24px;
       }
       h3 {
-        color: ${({ theme }) => theme.white};
+        color: ${({ theme }) => theme.textPrimary};
         font-size: 1.3rem;
         font-weight: 700;
         margin: 0;
@@ -292,7 +292,7 @@ export const Card = styled.div`
   }
 
   .description {
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.textSecondary};
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -306,9 +306,9 @@ export const Card = styled.div`
     margin-bottom: 1.5rem;
 
     span {
-      background: ${({ theme }) => theme.secondColor}15;
-      color: ${({ theme }) => theme.secondColor};
-      border: 1px solid ${({ theme }) => theme.secondColor}40;
+      background: ${({ theme }) => theme.backgroundAlt};
+      color: ${({ theme }) => theme.textPrimary};
+      border: 1px solid ${({ theme }) => theme.border};
       padding: 0.3rem 0.6rem;
       border-radius: 4px;
       font-size: 0.75rem;
@@ -326,16 +326,17 @@ export const Card = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.2);
+    background: ${({ theme }) => theme.backgroundAlt};
     padding: 0.8rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
+    border: 1px solid ${({ theme }) => theme.border};
 
     div {
       display: flex;
       align-items: center;
       gap: 0.4rem;
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.textSecondary};
       font-size: 0.8rem;
 
       svg { color: ${({ theme }) => theme.firstColor}; }
@@ -347,7 +348,7 @@ export const Card = styled.div`
     justify-content: flex-end;
     align-items: center;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid ${({ theme }) => theme.border};
 
     a {
       color: ${({ theme }) => theme.firstColor};
@@ -364,15 +365,11 @@ export const Card = styled.div`
 `;
 
 export const Badge = styled.span<{ variant?: 'primary' | 'secondary' | 'outline' }>`
-  background: ${({ variant, theme }) => 
-    variant === 'primary' ? `${theme.firstColor}20` : 
-    variant === 'secondary' ? `${theme.secondColor}20` : 'transparent'};
-  color: ${({ variant, theme }) => 
-    variant === 'primary' ? theme.firstColor : 
-    variant === 'secondary' ? theme.secondColor : theme.text};
+  background: ${({ theme }) => theme.backgroundAlt};
+  color: ${({ theme }) => theme.textPrimary};
   border: 1px solid ${({ variant, theme }) => 
-    variant === 'primary' ? `${theme.firstColor}40` : 
-    variant === 'secondary' ? `${theme.secondColor}40` : `${theme.text}40`};
+    variant === 'primary' ? `${theme.firstColor}60` : 
+    variant === 'secondary' ? `${theme.secondColor}60` : theme.border};
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.7rem;
