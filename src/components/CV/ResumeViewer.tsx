@@ -67,6 +67,7 @@ export function ResumeViewer({ pdfUrl }: ResumeViewerProps) {
   // isClient check removed since we use next/dynamic with ssr: false
   return (
     <ViewerContainer>
+      <h1 style={{ color: 'white' }}>DEBUG: ResumeViewer is mounting</h1>
       <DocumentWrapper>
         <Document
           file={pdfUrl}
