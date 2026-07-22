@@ -6,13 +6,7 @@ import { Description, Section, Title } from '../styles/styles'
 import { PageSection } from '../styles/resume'
 import { BsFileText } from 'react-icons/bs'
 import { useRouter } from 'next/router'
-import dynamic from 'next/dynamic'
-
-// Dynamically import the ResumeViewer to avoid SSR window/document issues with pdf.js
-const ResumeViewer = dynamic(
-  () => import('../components/CV/ResumeViewer').then((mod) => mod.ResumeViewer),
-  { ssr: false }
-);
+import { ResumeViewer } from '../components/CV/ResumeViewer';
 
 export default function Resume() {
   const router = useRouter();
