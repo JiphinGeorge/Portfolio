@@ -112,7 +112,7 @@ export default function AcademicLabs() {
   const generateFallbackRepo = (config: LabProgramConfig): RepoData => ({
     config,
     name: config.name,
-    html_url: \`https://github.com/JiphinGeorge/\${config.name}\`,
+    html_url: `https://github.com/JiphinGeorge/${config.name}`,
     updated_at: null,
     stargazers_count: null,
     primary_language: config.technologies[0] || null,
