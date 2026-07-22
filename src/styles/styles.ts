@@ -43,11 +43,11 @@ export const Title = styled.h2`
 
   span {
     z-index: -1;
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
     position: absolute;
     top: 3px;
     left: 50%;
