@@ -25,10 +25,10 @@ export function Header() {
           <div className="logo">
             <Image
               className="logo"
-              width={40}
-              height={40}
-              src="/jg-logo.png"
-              alt="logo"
+              width={45}
+              height={45}
+              src="/assets/jg_logo_transparent.png"
+              alt="JG Logo"
             />
           </div>
           <span>Jiphin George</span>
