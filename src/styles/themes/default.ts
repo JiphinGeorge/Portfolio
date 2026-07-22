@@ -1,35 +1,35 @@
 import { DefaultTheme } from 'styled-components';
 
 export const lightTheme: DefaultTheme = {
-  background: '#FFFFFF', // Light background
-  backgroundSecond: '#E0E0E0', // Slightly darker light background
-  backgroundAlt: '#E9ECEF', // Alternative light background
-  dark: '#343A40', // Dark color for contrast
+  background: '#F8FAFC',
+  backgroundSecond: '#F1F5F9',
+  backgroundAlt: 'rgba(255, 255, 255, 0.75)',
+  dark: '#0F172A',
 
-  firstColor: '#57007F', // Blue
-  secondColor: '#B200FF', // Indigo
+  firstColor: '#7C3AED',
+  secondColor: '#06B6D4',
 
-  cyan: '#17A2B8',
-  cyan_400: '#20C997',
-  cyan_500: '#0DCAF0',
+  cyan: '#06B6D4',
+  cyan_400: '#22d3ee',
+  cyan_500: '#06b6d4',
 
-  emerald_400: 'rgb(40, 167, 69)',
+  emerald_400: 'rgb(52, 211, 153)',
 
-  blue: '#007BFF',
-  color: 'rgb(0, 123, 255)',
-  white: '#FFFFFF', // White color for text and elements
-  text: '#FFFFFF', // Dark text color for readability
-  textPrimary: '#212529', // Primary text color
-  textSecondary: '#6C757D', // Secondary text color
-  hover: 'rgba(0, 123, 255, 0.7)', // Blue hover color
-  hoverSecond: 'rgba(102, 16, 242, 0.7)', // Indigo hover color
+  blue: '#06B6D4',
+  color: '#7C3AED',
+  white: '#FFFFFF',
+  text: '#64748B', // Muted text
+  textPrimary: '#0F172A',
+  textSecondary: '#475569',
+  hover: 'rgba(124, 58, 237, 0.7)',
+  hoverSecond: 'rgba(6, 182, 212, 0.7)',
 
-  gray: '#495057', // Darker gray for better visibility
-  gray_light: '#6C757D', // Light gray with better contrast
-  gray_easy: '#ADB5BD', // Slightly darker light gray
-  gray_medium: '#343A40', // Dark gray for strong contrast
+  gray: '#94A3B8',
+  gray_light: '#CBD5E1',
+  gray_easy: '#E2E8F0',
+  gray_medium: '#64748B',
 
-  border: '#B0B7BD', // Light border color
-  borderSecond: '#A1A8AE', // Secondary border color
+  border: 'rgba(124, 58, 237, 0.15)',
+  borderSecond: 'rgba(6, 182, 212, 0.15)',
 
 };
