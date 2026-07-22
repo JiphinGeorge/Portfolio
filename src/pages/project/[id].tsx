@@ -34,7 +34,6 @@ export default function Projeto({ project }: ProjectProps) {
         <Image className="bannerUrl" style={{ marginTop: '5rem' }} src={project.banner} alt={project.title} width={800} height={400} priority />
         <div className="bannerContainer">
           <div className="bannerContent">
-            <Image src={project.icon} alt={project.title} width={64} height={64} />
             <div>
               <h1>{project.title}</h1>
               <p>{project.type}</p>

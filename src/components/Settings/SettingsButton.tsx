@@ -260,7 +260,7 @@ const IconButton2 = styled.button`
       rgba(100, 255, 218, 0.1) 100%
     );
     border-color: rgba(100, 255, 218, 0.6);
-    color: ${({ theme }) => theme.firstColor};
+    color: rgba(100, 255, 218, 1);
     font-weight: 700;
   }
 `;
