@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { FaSun, FaMoon, FaPlay, FaPause } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import { Translate } from 'phosphor-react'
 import { MdFormatSize } from "react-icons/md";
 import styled from 'styled-components';
@@ -362,13 +362,9 @@ const Small = styled.small`
 `;
 
 const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
-  const [audioVisible, setAudioVisible] = useState(false);
   const [fontSize, setFontSize] = useState(16);
   const [showLanguageOptions, setShowLanguageOptions] = useState(false);
   const [showFontSizeOptions, setShowFontSizeOptions] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
-
-
 
   const increaseFontSize = () => {
     setFontSize(prevSize => prevSize + 2);
@@ -385,35 +381,15 @@ const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
     document.documentElement.style.fontSize = '16px';
   };
 
-  const musicSrc = '/music/in-slow-motion-inspiring-ambient-lounge-219592.mp3';
-
   useEffect(() => {
     document.documentElement.style.fontSize = `${fontSize}px`;
   }, [fontSize]);
-
-  const toggleAudio = () => {
-    if (audioRef.current) {
-      if (audioVisible) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setAudioVisible(!audioVisible);
-    }
-  };
 
   const fontSizePercentage = Math.round((fontSize / 16) * 100);
 
   return (
     <SettingsContainer>
       <OvalBar>
-        <IconButton 
-          onClick={toggleAudio}
-          className={audioVisible ? 'active' : ''}
-          title={audioVisible ? 'Pause Music' : 'Play Music'}
-        >
-          {audioVisible ? <FaPause /> : <FaPlay />}
-        </IconButton>
         <IconButton 
           onClick={toggleTheme}
           title={currentTheme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
@@ -440,8 +416,6 @@ const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
           <IconButton2 onClick={increaseFontSize} title="Increase Font Size">A+</IconButton2>
         </Dropdown>
       )}
-      
-      <audio ref={audioRef} src={musicSrc} loop />
     </SettingsContainer>
   );
 };
